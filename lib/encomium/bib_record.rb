@@ -1,7 +1,7 @@
 module Encomium
   class BibRecord
 
-    attr_reader :title, :issns, :oclc_numbers, :lc_classes
+    attr_reader :title, :issns, :oclc_numbers, :lc_classes, :type
 
     def initialize(marc_record)
       @record = marc_record
@@ -24,6 +24,7 @@ module Encomium
       @issns        = field_spec_values(@record, "022a:022e:776x")
       @oclc_numbers = self.primary_oclc_numbers + self.related_oclc_numbers
       @lc_classes   = field_spec_values(@record, "050a:090a")
+      @type         = "BibRecord"
     end
 
 

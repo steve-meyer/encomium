@@ -22,10 +22,15 @@ RSpec.describe Encomium::BibRecord do
       expect(@bib_record.lc_classes).to eq(["AP2.A2"])
     end
 
+    it "has a type" do
+      expect(@bib_record.type).to eq("BibRecord")
+    end
+
     it "can serialize itself as JSON" do
       expected = {
         title: "The Columbian phenix and Boston review", issns: ["2158-6322"],
-        oclc_numbers: [1564270, 3681200, 50677725, 564111688], lc_classes: ["AP2.A2"]
+        oclc_numbers: [1564270, 3681200, 50677725, 564111688], lc_classes: ["AP2.A2"],
+        type: "BibRecord"
       }.to_json
       expect(@bib_record.to_json).to eq(expected)
     end

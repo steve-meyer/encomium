@@ -6,7 +6,7 @@ module Encomium
 
       def initialize(csv_data)
         @csv_data = Array.new
-        File.directory?(csv_data) ? @csv_data += Dir[csv_data + "/*.csv"] : @csv_data << csv_data
+        csv_data.is_a?(Array) ? @csv_data += csv_data : @csv_data << csv_data
       end
 
 

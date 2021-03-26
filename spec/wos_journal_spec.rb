@@ -54,9 +54,10 @@ RSpec.describe Encomium::WOS::Journal do
     end
   end
 
-  context("when loading WOS journals from a directory of files") do
+  context("when loading WOS journals from an Array of files") do
     before(:all) do
-      csv_data = File.expand_path(File.dirname(__FILE__) + "/support/wos-journals-multiple")
+      csv_dir  = File.expand_path(File.dirname(__FILE__) + "/support/wos-journals-multiple")
+      csv_data = Dir[csv_dir + "/*.csv"]
       journals = Encomium::WOS::JournalList.new(csv_data).reduce([]) {|journals, title| journals << title}
       @first   = journals.first
       @last    = journals.last

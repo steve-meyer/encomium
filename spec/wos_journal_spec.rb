@@ -24,6 +24,10 @@ RSpec.describe Encomium::WOS::Journal do
       expect(@first.eissn).to be nil
     end
 
+    it "can produce a compacted list of both ISSNs" do
+      expect(@first.issns).to eq(["0171-5410"])
+    end
+
     it "has a publisher" do
       expect(@first.publisher).to eq("GUNTER NARR VERLAG")
     end

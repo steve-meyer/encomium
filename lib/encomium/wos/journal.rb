@@ -17,6 +17,11 @@ module Encomium
       end
 
 
+      def issns
+        [self.issn, self.eissn].compact
+      end
+
+
       private
 
 

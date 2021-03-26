@@ -40,10 +40,15 @@ RSpec.describe Encomium::WOS::Journal do
       expect(@first.collection).to eq("AHCI")
     end
 
+    it "has a type" do
+      expect(@first.type).to eq("WebOfScienceTitle")
+    end
+
     it "can serialize itself as JSON" do
       expected = {
         id: 1, title: "AAA-ARBEITEN AUS ANGLISTIK UND AMERIKANISTIK", issn: "0171-5410", eissn: nil,
-        publisher: "GUNTER NARR VERLAG", categories: ["Literature", "Language & Linguistics"], collection: "AHCI"
+        publisher: "GUNTER NARR VERLAG", categories: ["Literature", "Language & Linguistics"], collection: "AHCI",
+        type: "WebOfScienceTitle"
       }.to_json
       expect(@first.to_json).to eq(expected)
     end

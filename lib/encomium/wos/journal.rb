@@ -33,6 +33,7 @@ module Encomium
         @publisher = data["Publisher name"]
         @categories = data["Web of Science Categories"].split(" | ")
         @collection = data["Collection"]
+        @type = "WebOfScienceTitle"
       end
 
     end

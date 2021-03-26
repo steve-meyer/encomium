@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "csv"
+require "json"
 
 require_relative "encomium/version"
 require_relative "encomium/wos/journal_list"

@@ -35,6 +35,14 @@ RSpec.describe Encomium::WOS::Journal do
     it "has a collection" do
       expect(@first.collection).to eq("AHCI")
     end
+
+    it "can serialize itself as JSON" do
+      expected = {
+        id: 1, title: "AAA-ARBEITEN AUS ANGLISTIK UND AMERIKANISTIK", issn: "0171-5410", eissn: nil,
+        publisher: "GUNTER NARR VERLAG", categories: ["Literature", "Language & Linguistics"], collection: "AHCI"
+      }.to_json
+      expect(@first.to_json).to eq(expected)
+    end
   end
 
   context("when loading WOS journals from a directory of files") do

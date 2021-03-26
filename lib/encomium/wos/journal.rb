@@ -10,6 +10,13 @@ module Encomium
       end
 
 
+      def to_json
+        self.instance_variables.select {|var| var != :@journal_list}
+            .reduce(Hash.new) {|h, var| h[var.to_s[1..-1]] = self.instance_variable_get(var); h}
+            .to_json
+      end
+
+
       private
 
 

@@ -10,6 +10,9 @@ require "encomium"
 CONFIG = YAML.load_file("config/files.yml")
 
 
+task :build => :wostitles_by_issn
+
+
 task :wostitles_by_issn do
   puts "Indexing WOS Title Lists by ISSN"
   input_csv_data = CONFIG["base_data_directory"] + "/wos-journals"

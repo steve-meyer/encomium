@@ -10,7 +10,7 @@ RSpec.describe Encomium::WOS::PubSummary do
     expect(@pub_summary.article_count).to eq(2)
   end
 
-  it "splits authorshipo counts across ISSNs" do
+  it "splits authorship counts across ISSNs" do
     expect(@pub_summary.journals["2469-9985"][2015][10][:mn][:articles]).to eq(0.5)
     expect(@pub_summary.journals["2469-9993"][2015][10][:mn][:articles]).to eq(0.5)
   end

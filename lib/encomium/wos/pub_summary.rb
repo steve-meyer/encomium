@@ -29,8 +29,11 @@ module Encomium
             month = 1 if month.nil?
 
             issns.each do |issn|
-              @journals[issn][year][month][inst][:articles]    += issn_percentage
-              @journals[issn][year][month][inst][:with_grants] += issn_percentage if article["grants"] && article["grants"].size > 0
+              if Encomium.valid_issn?(issn)
+                @journals[issn][year][month][inst][:articles]    += issn_percentage
+                has_grants = article["grants"] && article["grants"].size > 0
+                @journals[issn][year][month][inst][:with_grants] += issn_percentage if has_grants
+              end
             end
           end
         end

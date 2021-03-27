@@ -5,18 +5,47 @@ require "bundler/setup"
 require "encomium"
 
 
-CONFIG   = YAML.load_file("config/files.yml")
-base_dir = CONFIG["base_data_directory"]
+CONFIG     = YAML.load_file("config/files.yml")
+base_dir   = CONFIG["base_data_directory"]
+output_dir = base_dir + "/output"
 
 # Outputs
-wostitles_idx = base_dir + "/output/issn-indexed-wostitles.tsv"
-bibtitles_idx = base_dir + "/output/issn-indexed-bib-records.tsv"
+wostitles_idx  = output_dir + "/issn-indexed-wostitles.tsv"
+bibtitles_idx  = output_dir + "/issn-indexed-bib-records.tsv"
+pubsummary_idx = output_dir + "/issn-indexed-publication-summaries.tsv"
 
 # Inputs
 wostitle_csv = FileList[base_dir + "/wos-journals/*.csv"].each {|csv_file| file wostitles_idx => csv_file}
 marc_files   = FileList[base_dir + "/MARC/*.mrc"].each         {|marc_file| file bibtitles_idx => marc_file}
+article_data = FileList[base_dir + "/articles/**/*.json"].each {|article_file| file pubsummary_idx => article_file}
 
-task :build => [wostitles_idx, bibtitles_idx]
+
+task :build => [wostitles_idx, bibtitles_idx, pubsummary_idx]
+
+
+file pubsummary_idx do
+  puts "Indexing articles by ISSN"
+  File.open(pubsummary_idx, "w+") do |output_file|
+    pub_summary = Encomium::WOS::PubSummary.new(article_data)
+    pub_summary.run
+    pub_summary.journals.each do |issn, data|
+      data.each do |year, months|
+        months.each do |month, institutions|
+          institutions.each do |code, counts|
+            if counts[:articles] > 0
+              date   = "#{year}-#{month.to_s.rjust(2, "0")}-01"
+              record = {
+                institution: code, articles: counts[:articles], with_grants: counts[:with_grants],
+                date: date, type: "PubSummary"
+              }
+              output_file.puts([issn, record.to_json].join("\t"))
+            end
+          end
+        end
+      end
+    end
+  end
+end
 
 
 file bibtitles_idx do

@@ -9,7 +9,7 @@ RSpec.describe Encomium::WOS::CitationSummary do
     cited_article_data_dir = base_directory + "/wos-cited-articles"
     cited_article_files    = Dir[cited_article_data_dir + "/*.json"]
 
-    @citation_summary= Encomium::WOS::CitationSummary.new(article_files, cited_article_files, @output_directory)
+    @citation_summary = Encomium::WOS::CitationSummary.new(article_files, cited_article_files, @output_directory)
     @citation_summary.run
   end
 

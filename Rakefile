@@ -13,14 +13,25 @@ output_dir = base_dir + "/output"
 wostitles_idx  = output_dir + "/issn-indexed-wostitles.tsv"
 bibtitles_idx  = output_dir + "/issn-indexed-bib-records.tsv"
 pubsummary_idx = output_dir + "/issn-indexed-publication-summaries.tsv"
+citsummary_idx = output_dir + "/issn-indexed-citeddoc-summaries.tsv"
 
 # Inputs
 wostitle_csv = FileList[base_dir + "/wos-journals/*.csv"].each {|csv_file| file wostitles_idx => csv_file}
 marc_files   = FileList[base_dir + "/MARC/*.mrc"].each         {|marc_file| file bibtitles_idx => marc_file}
-article_data = FileList[base_dir + "/articles/**/*.json"].each {|article_file| file pubsummary_idx => article_file}
+article_data = FileList[base_dir + "/articles/**/*.json"]
+cited_docs   = FileList[base_dir + "/cited-articles/*.json"]
+article_data.each {|article_file| file pubsummary_idx => article_file}
+(cited_docs + article_data).each {|article_file| file citsummary_idx => article_file}
 
 
-task :build => [wostitles_idx, bibtitles_idx, pubsummary_idx]
+task :build => [wostitles_idx, bibtitles_idx, pubsummary_idx, citsummary_idx]
+
+
+file citsummary_idx do
+  puts "Indexing cited references by ISSN"
+  citation_summary = Encomium::WOS::CitationSummary.new(article_data, cited_docs, output_dir)
+  citation_summary.run
+end
 
 
 file pubsummary_idx do

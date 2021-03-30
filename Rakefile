@@ -9,22 +9,56 @@ CONFIG     = YAML.load_file("config/files.yml")
 base_dir   = CONFIG["base_data_directory"]
 output_dir = base_dir + "/output"
 
+
 # Outputs
 wostitles_idx  = output_dir + "/issn-indexed-wostitles.tsv"
 bibtitles_idx  = output_dir + "/issn-indexed-bib-records.tsv"
 pubsummary_idx = output_dir + "/issn-indexed-publication-summaries.tsv"
-citsummary_idx = output_dir + "/issn-indexed-citeddoc-summaries.tsv"
+citsummary_idx = output_dir + "/issn-indexed-citing-docs.tsv"
+usesummary_idx = output_dir + "/issn-indexed-use-summaries.tsv"
 
 # Inputs
-wostitle_csv = FileList[base_dir + "/wos-journals/*.csv"].each {|csv_file| file wostitles_idx => csv_file}
+wostitle_csv = FileList[base_dir + "/wos-journals/*.csv"].each {|csv_file|  file wostitles_idx => csv_file}
 marc_files   = FileList[base_dir + "/MARC/*.mrc"].each         {|marc_file| file bibtitles_idx => marc_file}
+use_data     = FileList[base_dir + "/COUNTER/**/*.csv"].each   {|use_file|  file usesummary_idx => use_file}
 article_data = FileList[base_dir + "/articles/**/*.json"]
 cited_docs   = FileList[base_dir + "/cited-articles/*.json"]
-article_data.each {|article_file| file pubsummary_idx => article_file}
+article_data.each                {|article_file| file pubsummary_idx => article_file}
 (cited_docs + article_data).each {|article_file| file citsummary_idx => article_file}
 
 
-task :build => [wostitles_idx, bibtitles_idx, pubsummary_idx, citsummary_idx]
+task :build => [wostitles_idx, bibtitles_idx, pubsummary_idx, citsummary_idx, usesummary_idx]
+
+
+file usesummary_idx do
+  puts "Indexing use data by ISSN"
+  File.open(usesummary_idx, "w+") do |output_file|
+    use_summary = Encomium::COUNTER::UseSummary.new(use_data)
+    use_summary.run
+    use_summary.journals.each do |issn, data|
+      data[:uses].each do |year, months|
+        months.each do |month, institutions|
+          institutions.each do |code, use_count|
+            if use_count > 0
+              date   = "#{year}-#{month.to_s.rjust(2, "0")}-01"
+              record = {institution: code, uses: use_count, date: date, type: "UseSummary"}
+              output_file.puts([issn, record.to_json].join("\t"))
+            end
+          end
+        end
+      end
+      publishers = data[:publishers].to_a.select {|pub| pub.to_s.strip != ""}.map {|pub| pub.to_s.strip}
+      record = {publishers: publishers.to_a.join("; "), type: "UsePublisherRecord"}
+      output_file.puts([issn, record.to_json].join("\t"))
+    end
+    if use_summary.bad_counter_rows.size > 0
+      puts "Bad COUNTER rows by institution:"
+      use_summary.bad_counter_rows.each do |inst, reasons|
+        reasons.to_a.sort.each {|reason, count| puts "#{inst}: #{reason} (#{count})"}
+      end
+    end
+  end
+end
 
 
 file citsummary_idx do

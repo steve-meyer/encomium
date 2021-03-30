@@ -2,18 +2,18 @@ module Encomium
   module COUNTER
     class UseSummary
 
-      attr_reader :title_count, :journals
+      attr_reader :title_count, :journals, :bad_counter_rows
 
 
       def initialize(counter_files)
         @counter_files = counter_files
         @title_count = 0
         @journals = Hash.new {|h, issn| h[issn] = data_template}
+        @bad_counter_rows = Hash.new {|h,inst| h[inst] = Hash.new(0)}
       end
 
 
       def run
-        bad_counter_rows = Hash.new(0)
         @counter_files.sort.each do |use_file|
           institution = File.basename( File.dirname(use_file) )
           CSV.open(use_file, headers: true).each do |row|
@@ -36,8 +36,7 @@ module Encomium
               @journals[issn][:uses][date.year][date.month][institution.to_sym] += uses.to_i
               @journals[issn][:publishers] << publisher
             rescue Exception => e
-              puts e.message
-              bad_counter_rows[institution] += 1
+              @bad_counter_rows[institution][e.message] += 1
             end
           end
         end
@@ -59,8 +58,8 @@ module Encomium
       def parse_date(date_str)
         case date_str
         when /\d{1,2}\/\d{1,2}\/\d{1,2}/ then Date.strptime(date_str, "%m/%d/%y")
-        when /\d{4}\-\d{2}\-\d{2}/ then Date.parse(date_str)
-        else raise Exception.new("Bad date: #{date_str}")
+        when /\d{4}\-\d{2}\-\d{2}/       then Date.parse(date_str)
+        else raise Exception.new("Bad date: '#{date_str}'")
         end
       end
 

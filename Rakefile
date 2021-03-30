@@ -16,6 +16,7 @@ bibtitles_idx  = output_dir + "/issn-indexed-bib-records.tsv"
 pubsummary_idx = output_dir + "/issn-indexed-publication-summaries.tsv"
 citsummary_idx = output_dir + "/issn-indexed-citing-docs.tsv"
 usesummary_idx = output_dir + "/issn-indexed-use-summaries.tsv"
+issn_idx       = output_dir + "/issn-indexed-data.tsv"
 
 # Inputs
 wostitle_csv = FileList[base_dir + "/wos-journals/*.csv"].each {|csv_file|  file wostitles_idx => csv_file}
@@ -27,7 +28,18 @@ article_data.each                {|article_file| file pubsummary_idx => article_
 (cited_docs + article_data).each {|article_file| file citsummary_idx => article_file}
 
 
-task :build => [wostitles_idx, bibtitles_idx, pubsummary_idx, citsummary_idx, usesummary_idx]
+task :build => [wostitles_idx, bibtitles_idx, pubsummary_idx, citsummary_idx, usesummary_idx, issn_idx]
+
+
+file issn_idx => [wostitles_idx, bibtitles_idx, pubsummary_idx, citsummary_idx, usesummary_idx] do
+  puts "Creating combined ISSN index file"
+  `cat #{wostitles_idx} #{bibtitles_idx} #{pubsummary_idx} #{citsummary_idx} #{usesummary_idx} > #{issn_idx}`
+  puts "Sorting ISSN index"
+  FileUtils.cd(File.expand_path(File.dirname(__FILE__)) + "/lib") do
+    `java -jar filesorter-0.1.0.jar #{issn_idx}`
+  end
+end
+
 
 
 file usesummary_idx do

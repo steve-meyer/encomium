@@ -120,7 +120,7 @@ file bibtitles_idx do
   File.open(bibtitles_idx, "w+") do |output_file|
     marc_files.each do |marc_file|
       MARC::Reader.new(marc_file).each do |record|
-        bib_record = Encomium::BibRecord.new(record)
+        bib_record = Encomium::MARC::BibRecord.new(record)
         bib_record.issns.each do |issn|
           output_file.puts([issn, bib_record.to_json].join("\t")) if Encomium.valid_issn?(issn)
         end

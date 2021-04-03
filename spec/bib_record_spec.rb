@@ -1,9 +1,9 @@
-RSpec.describe Encomium::BibRecord do
+RSpec.describe Encomium::MARC::BibRecord do
   context "when loading bibliographic data from a MARC file" do
     before(:all) do
       marc_file  = File.expand_path(File.dirname(__FILE__) + "/support/marc/sample.mrc")
       marc_record = MARC::Record.new_from_marc( File.read(marc_file) )
-      @bib_record = Encomium::BibRecord.new(marc_record)
+      @bib_record = Encomium::MARC::BibRecord.new(marc_record)
     end
 
     it "has a title" do

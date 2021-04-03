@@ -30,5 +30,20 @@ module Encomium
       issn.is_a?(String) && (issn =~ /^[0-9]{4}-[0-9]{3}[0-9xX]$/) == 0
     end
 
+
+    def consolidate_wos_records(wos_titles)
+      titles = wos_titles.reduce(Hash.new) do |titles, title|
+        key = title["title"].to_s + "::" + title["issn"].to_s + "::" + title["eissn"].to_s
+        if titles.has_key?(key)
+          titles[key].merge!(title) {|k, old_v, new_v| old_v == new_v ? old_v : [old_v, new_v].flatten.compact.uniq}
+        else
+          titles[key] = title
+        end
+        titles
+      end
+      titles.values.map {|t| t["id"] = t["id"].sort.first if t["id"].is_a?(Array); t}
+    end
+
+
   end
 end

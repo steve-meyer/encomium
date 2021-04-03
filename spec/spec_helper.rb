@@ -13,3 +13,8 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 end
+
+
+def get_journal_records(journal_data, type)
+  journal_data["55"].select {|r| r["type"] == type}
+end

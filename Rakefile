@@ -17,6 +17,7 @@ pubsummary_idx = output_dir + "/issn-indexed-publication-summaries.tsv"
 citsummary_idx = output_dir + "/issn-indexed-citing-docs.tsv"
 usesummary_idx = output_dir + "/issn-indexed-use-summaries.tsv"
 issn_idx       = output_dir + "/issn-indexed-data.tsv"
+journalid_idx  = output_dir + "/journalid-indexed-data.tsv"
 
 # Inputs
 wostitle_csv = FileList[base_dir + "/wos-journals/*.csv"].each {|csv_file|  file wostitles_idx => csv_file}
@@ -28,7 +29,16 @@ article_data.each                {|article_file| file pubsummary_idx => article_
 (cited_docs + article_data).each {|article_file| file citsummary_idx => article_file}
 
 
-task :build => [wostitles_idx, bibtitles_idx, pubsummary_idx, citsummary_idx, usesummary_idx, issn_idx]
+task :build => [wostitles_idx, bibtitles_idx, pubsummary_idx, citsummary_idx, usesummary_idx, issn_idx, journalid_idx]
+
+
+file journalid_idx => issn_idx do
+  puts "Reindexing clustered ISSN data by WOS journal ID"
+  Encomium::WOS::Journal.reindex_by_id(issn_idx, journalid_idx)
+  FileUtils.cd(File.expand_path(File.dirname(__FILE__)) + "/lib") do
+    `java -jar filesorter-0.1.0.jar #{journalid_idx}`
+  end
+end
 
 
 file issn_idx => [wostitles_idx, bibtitles_idx, pubsummary_idx, citsummary_idx, usesummary_idx] do

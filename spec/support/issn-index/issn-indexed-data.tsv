@@ -1,0 +1,23 @@
+0000-0914	{"title":"Magazines for libraries","issns":["0000-0914"],"oclc_numbers":[4940202],"lc_classes":["Z6941 PN4832"],"type":"BibRecord"}
+0002-9114	{"citation_id":699593,"citing_article_id":"WOS:000399785900066","date":"2016-01-01","citing_inst":"mn","type":"CitingDocument","identifiers":[{"type":"accession_no","value":"BH3LH"},{"type":"eisbn","value":"978-1-315-62142-5"},{"type":"isbn","value":"978-1-138-80836-2"}]}
+0002-9114	{"citation_id":2618539,"citing_article_id":"WOS:000350946200004","date":"2015-01-01","citing_inst":"uw","type":"CitingDocument","identifiers":[{"type":"accession_no","value":"CD2YZ"},{"type":"issn","value":"0002-9114"},{"type":"eissn","value":"1939-828X"},{"type":"doi","value":"10.3764/aja.119.1.0069"}]}
+0002-9114	{"institution":"uw","articles":0.5,"with_grants":0.0,"date":"2017-07-01","type":"PubSummary"}
+0002-9114	{"institution":"osu","uses":23,"date":"2015-01-01","type":"UseSummary"}
+0002-9114	{"id":55,"title":"AMERICAN JOURNAL OF ARCHAEOLOGY","issn":"0002-9114","eissn":"1939-828X","publisher":"ARCHAEOLOGICAL INST AMERICA","categories":["Archaeology"],"collection":"AHCI","type":"WebOfScienceTitle"}
+0002-9114	{"citation_id":2662562,"citing_article_id":"WOS:000347641600003","date":"2015-01-01","citing_inst":"uw","type":"CitingDocument","identifiers":[{"type":"accession_no","value":"AY5XE"},{"type":"issn","value":"0009-837X"},{"type":"eissn","value":"1546-072X"},{"type":"doi","value":"10.1086/678680"}]}
+0002-9114	{"institution":"mn","uses":39,"date":"2015-02-01","type":"UseSummary"}
+0002-9114	{"id":36846,"title":"AMERICAN JOURNAL OF ARCHAEOLOGY","issn":"0002-9114","eissn":"1939-828X","publisher":"ARCHAEOLOGICAL INST AMERICA","categories":["Archaeology"],"collection":"CCArtsHum","type":"WebOfScienceTitle"}
+0002-9114	{"institution":"mn","uses":33,"date":"2017-12-01","type":"UseSummary"}
+0002-9114	{"institution":"osu","uses":73,"date":"2017-12-01","type":"UseSummary"}
+0002-9114	{"institution":"uw","uses":93,"date":"2017-12-01","type":"UseSummary"}
+0002-9114	{"publishers":"Archaeological Institute of America","type":"UsePublisherRecord"}
+1939-828X	{"institution":"uw","articles":0.5,"with_grants":0.0,"date":"2015-01-01","type":"PubSummary"}
+1939-828X	{"id":55,"title":"AMERICAN JOURNAL OF ARCHAEOLOGY","issn":"0002-9114","eissn":"1939-828X","publisher":"ARCHAEOLOGICAL INST AMERICA","categories":["Archaeology"],"collection":"AHCI","type":"WebOfScienceTitle"}
+1939-828X	{"id":36846,"title":"AMERICAN JOURNAL OF ARCHAEOLOGY","issn":"0002-9114","eissn":"1939-828X","publisher":"ARCHAEOLOGICAL INST AMERICA","categories":["Archaeology"],"collection":"CCArtsHum","type":"WebOfScienceTitle"}
+1939-828X	{"institution":"uw","articles":0.5,"with_grants":0.0,"date":"2016-07-01","type":"PubSummary"}
+1939-828X	{"citation_id":3523866,"citing_article_id":"WOS:000404170900006","date":"2017-07-01","citing_inst":"uw","type":"CitingDocument","identifiers":[{"type":"accession_no","value":"EY7KY"},{"type":"issn","value":"0002-9114"},{"type":"eissn","value":"1939-828X"},{"type":"doi","value":"10.3764/aja.121.3.0467"}]}
+1939-828X	{"title":"American journal of archaeology","issns":["1939-828X","0002-9114"],"oclc_numbers":[51205117],"lc_classes":["CC1"],"type":"BibRecord"}
+1939-828X	{"citation_id":2618519,"citing_article_id":"WOS:000350946200004","date":"2015-01-01","citing_inst":"uw","type":"CitingDocument","identifiers":[{"type":"accession_no","value":"CD2YZ"},{"type":"issn","value":"0002-9114"},{"type":"eissn","value":"1939-828X"},{"type":"doi","value":"10.3764/aja.119.1.0069"}]}
+1939-828X	{"institution":"uw","articles":0.5,"with_grants":0.0,"date":"2017-07-01","type":"PubSummary"}
+1939-828X	{"citation_id":2699820,"citing_article_id":"WOS:000354289500006","date":"2015-04-01","citing_inst":"uw","type":"CitingDocument","identifiers":[{"type":"accession_no","value":"CH8MC"},{"type":"issn","value":"0093-4690"},{"type":"eissn","value":"2042-4582"},{"type":"doi","value":"10.1179/0093469015Z.000000000112"}]}
+1939-828X	{"citation_id":2931985,"citing_article_id":"WOS:000378661900006","date":"2016-07-01","citing_inst":"uw","type":"CitingDocument","identifiers":[{"type":"accession_no","value":"DP7EL"},{"type":"issn","value":"0002-9114"},{"type":"eissn","value":"1939-828X"},{"type":"doi","value":"10.3764/aja.120.3.0473"}]}

@@ -22,6 +22,21 @@ module Encomium
       end
 
 
+      def self.reindex_by_id(input_filepath, output_filepath)
+        File.open(output_filepath, "w+") do |output_file|
+          DataStream::Reader.new(input_filepath, id_format: :string).each do |issn, records|
+            wos_titles    = records.select {|r| r["type"] == "WebOfScienceTitle"}
+            next if wos_titles.size == 0
+
+            wos_titles    = Encomium.consolidate_wos_records(wos_titles) if wos_titles.size > 1
+            wos_title_ids = wos_titles.map {|t| t["id"]}.uniq
+            wos_title_id  = wos_title_ids.first
+            records.each {|r| output_file.puts([wos_title_id, r.to_json].join("\t"))}
+          end
+        end
+      end
+
+
       private
 
 

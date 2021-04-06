@@ -19,7 +19,7 @@ module Encomium
         @csv_data.each do |csv_file|
           @collection = File.basename(csv_file, ".csv").gsub(/^wos[_-]/, "").gsub("core_", "")
           CSV.open(csv_file, headers: true).each do |row|
-            row["Collection"] = @collection
+            row["Collection"] = [@collection]
             yield Encomium::WOS::Journal.new(row, self)
           end
         end

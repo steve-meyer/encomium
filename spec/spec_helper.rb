@@ -18,3 +18,9 @@ end
 def get_journal_records(journal_data, type)
   journal_data["55"].select {|r| r["type"] == type}
 end
+
+
+def table_data(name)
+  data_dir = File.expand_path(File.dirname(__FILE__) + "/support/database")
+  CSV.open("#{data_dir}/#{name}.tsv", headers: true, col_sep: "\t", quote_char: nil).map {|row| row.to_h}
+end

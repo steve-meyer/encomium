@@ -2,7 +2,7 @@ module Encomium
   module WOS
     class Journal
 
-      attr_reader :id, :title, :issn, :eissn, :publisher, :categories, :collection, :type
+      attr_reader :id, :title, :issn, :eissn, :publisher, :categories, :collections, :type
 
       def initialize(data, journal_list = nil)
         @journal_list = journal_list
@@ -47,7 +47,7 @@ module Encomium
         @eissn = data["eISSN"] == "" ? nil : data["eISSN"]
         @publisher = data["Publisher name"]
         @categories = data["Web of Science Categories"].split(" | ")
-        @collection = data["Collection"]
+        @collections = data["Collection"]
         @type = "WebOfScienceTitle"
       end
 

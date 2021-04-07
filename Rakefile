@@ -18,6 +18,7 @@ citsummary_idx = output_dir + "/issn-indexed-citing-docs.tsv"
 usesummary_idx = output_dir + "/issn-indexed-use-summaries.tsv"
 issn_idx       = output_dir + "/issn-indexed-data.tsv"
 journalid_idx  = output_dir + "/journalid-indexed-data.tsv"
+summary_output = output_dir + "/combined-data-summary.csv"
 
 # Inputs
 wostitle_csv = FileList[base_dir + "/wos-journals/*.csv"].each {|csv_file|  file wostitles_idx => csv_file}
@@ -29,7 +30,13 @@ article_data.each                {|article_file| file pubsummary_idx => article_
 (cited_docs + article_data).each {|article_file| file citsummary_idx => article_file}
 
 
-task :build => [wostitles_idx, bibtitles_idx, pubsummary_idx, citsummary_idx, usesummary_idx, issn_idx, journalid_idx]
+task :build => [wostitles_idx, bibtitles_idx, pubsummary_idx, citsummary_idx, usesummary_idx, issn_idx, journalid_idx, summary_output]
+
+
+file summary_output => journalid_idx do
+  puts "Generating summary output"
+  Encomium::DataSet.new(journalid_idx, output_dir).generate_analysis_csv
+end
 
 
 file journalid_idx => issn_idx do

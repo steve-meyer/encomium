@@ -7,6 +7,7 @@ require "marc"
 require "data_stream"
 
 require_relative "encomium/version"
+require_relative "encomium/data_set"
 require_relative "encomium/counter/use_summary"
 require_relative "encomium/wos/journal_list"
 require_relative "encomium/wos/journal"

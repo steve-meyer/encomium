@@ -19,6 +19,7 @@ usesummary_idx = output_dir + "/issn-indexed-use-summaries.tsv"
 issn_idx       = output_dir + "/issn-indexed-data.tsv"
 journalid_idx  = output_dir + "/journalid-indexed-data.tsv"
 summary_output = output_dir + "/combined-data-summary.csv"
+journals_table = output_dir + "/database/journals.tsv"
 
 # Inputs
 wostitle_csv = FileList[base_dir + "/wos-journals/*.csv"].each {|csv_file|  file wostitles_idx => csv_file}
@@ -31,6 +32,17 @@ article_data.each                {|article_file| file pubsummary_idx => article_
 
 
 task :build => [wostitles_idx, bibtitles_idx, pubsummary_idx, citsummary_idx, usesummary_idx, issn_idx, journalid_idx, summary_output]
+
+
+task :db_tables => journals_table
+
+
+file journals_table => journalid_idx do
+  puts "Generating database tables"
+  data_dir = File.dirname(journals_table)
+  FileUtils.mkdir_p(data_dir)
+  Encomium::DataSet.new(journalid_idx, data_dir).generate_tables
+end
 
 
 file summary_output => journalid_idx do

@@ -43,32 +43,18 @@ module Encomium
     private
 
 
-    def setup_lookup_tables
-      @lookup_counters = { "categories" => 0, "collections" => 0, "publishers" => 0 }
-
-      @lookup_tables = @lookup_counters.keys.reduce(Hash.new) do |lookup_tables, table_name|
-        lookup_tables[table_name] = Hash.new do |hash, name|
-          @lookup_counters[table_name] += 1
-          @tables[table_name] << [@lookup_counters[table_name], name]
-          hash[name] = @lookup_counters[table_name]
-        end
-        lookup_tables
-      end
-    end
-
-
     def generate_table_files
-      journal_counter             = 0
-      publication_summary_counter = 0
-      use_summary_counter         = 0
-      citation_summary_counter    = 0
+      @journal_counter             = 0
+      @publication_summary_counter = 0
+      @use_summary_counter         = 0
+      @citation_summary_counter    = 0
 
       DataStream::Reader.new(@journalid_index, id_format: :string).each do |work_id, records|
         wos_titles = records.select {|r| r["type"] == "WebOfScienceTitle"}
         next unless wos_title_data_valid?(wos_titles)
 
-        journal_counter += 1
-        wos_title        = wos_titles.first
+        @journal_counter += 1
+        title            = wos_titles.first
         bibs             = records.select {|r| r["type"] == "BibRecord"}
         pub_summaries    = records.select {|r| r["type"] == "PubSummary"}
         use_summaries    = records.select {|r| r["type"] == "UseSummary"}
@@ -76,49 +62,56 @@ module Encomium
         citing_recs      = all_citing_recs.size == 0 ? [] : deduplicate_citing_documents(all_citing_recs)
 
         lc_classes   = bibs.map {|b| b["lc_classes"]}.flatten.compact.uniq.join("; ")
-        publisher_id = @lookup_tables["publishers"][wos_title["publisher"]]
+        publisher_id = @lookup_tables["publishers"][title["publisher"]]
 
-        @tables["journals"] << [
-          journal_counter, wos_title["title"], wos_title["issn"], wos_title["eissn"], lc_classes, publisher_id
-        ]
+        journal_row = [@journal_counter, title["title"], title["issn"], title["eissn"], lc_classes, publisher_id]
+        @tables["journals"] << journal_row
 
-        # Normalize the data for categories, collections
-        @lookup_tables.keys.each do |field|
-          next if field == "publishers"
-          wos_title[field].each do |value|
-            field_id = @lookup_tables[field][value]
-            @tables["#{field}_journals"] << [field_id, journal_counter]
-          end
-        end
+        process_categories_collections(title)
+        process_summary_data(pub_summaries, use_summaries, citing_recs)
+      end
+    end
 
-        monthly_data = merge_inst_data(pub_summaries, use_summaries, citing_recs)
-        monthly_data.each do |year, months|
-          months.each do |month, data|
-            date = "#{year}-#{month.to_s.rjust(2, "0")}-01"
-            data.each do |inst, statistics|
-              if statistics[:articles] > 0
-                publication_summary_counter += 1
-                @tables["publication_summaries"] << [
-                  publication_summary_counter, journal_counter, date, inst.to_s,
-                  statistics[:articles].to_f.to_s, statistics[:with_grants].to_f.to_s
-                ]
-              end
 
-              if statistics[:uses] > 0
-                use_summary_counter += 1
-                @tables["use_summaries"] << [
-                  use_summary_counter, journal_counter, date, inst.to_s, statistics[:uses].to_f.to_s
-                ]
-              end
+    def process_summary_data(pub_summaries, use_summaries, citing_recs)
+      monthly_data = merge_inst_data(pub_summaries, use_summaries, citing_recs)
+      monthly_data.each do |year, months|
+        months.each do |month, data|
+          date = "#{year}-#{month.to_s.rjust(2, "0")}-01"
+          data.each do |inst, statistics|
+            if statistics[:articles] > 0
+              @publication_summary_counter += 1
+              @tables["publication_summaries"] << [
+                @publication_summary_counter, @journal_counter, date, inst.to_s,
+                statistics[:articles].to_f.to_s, statistics[:with_grants].to_f.to_s
+              ]
+            end
 
-              if statistics[:cites] > 0
-                citation_summary_counter += 1
-                @tables["citation_summaries"] << [
-                  citation_summary_counter, journal_counter, date, inst.to_s, statistics[:cites].to_f.to_s
-                ]
-              end
+            if statistics[:uses] > 0
+              @use_summary_counter += 1
+              @tables["use_summaries"] << [
+                @use_summary_counter, @journal_counter, date, inst.to_s, statistics[:uses].to_f.to_s
+              ]
+            end
+
+            if statistics[:cites] > 0
+              @citation_summary_counter += 1
+              @tables["citation_summaries"] << [
+                @citation_summary_counter, @journal_counter, date, inst.to_s, statistics[:cites].to_f.to_s
+              ]
             end
           end
+        end
+      end
+    end
+
+
+    def process_categories_collections(wos_title)
+      @lookup_tables.keys.each do |field|
+        next if field == "publishers"
+        wos_title[field].each do |value|
+          field_id = @lookup_tables[field][value]
+          @tables["#{field}_journals"] << [field_id, @journal_counter]
         end
       end
     end
@@ -137,6 +130,20 @@ module Encomium
         false
       else
         true
+      end
+    end
+
+
+    def setup_lookup_tables
+      @lookup_counters = { "categories" => 0, "collections" => 0, "publishers" => 0 }
+
+      @lookup_tables = @lookup_counters.keys.reduce(Hash.new) do |lookup_tables, table_name|
+        lookup_tables[table_name] = Hash.new do |hash, name|
+          @lookup_counters[table_name] += 1
+          @tables[table_name] << [@lookup_counters[table_name], name]
+          hash[name] = @lookup_counters[table_name]
+        end
+        lookup_tables
       end
     end
 

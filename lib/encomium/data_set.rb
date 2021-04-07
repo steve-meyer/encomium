@@ -22,8 +22,8 @@ module Encomium
 
 
     def generate_analysis_csv
-      summary_output = output_dir + "/combined-data-summary.csv"
-      monthly_output = output_dir + "/combined-data-monthly.csv"
+      summary_output = @output_dir + "/combined-data-summary.csv"
+      monthly_output = @output_dir + "/combined-data-monthly.csv"
       @summary_csv = CSV.open(summary_output, "w+", headers: summary_headers, write_headers: true)
       @monthly_csv = CSV.open(monthly_output, "w+", headers: monthly_headers, write_headers: true)
       process_journals
@@ -131,7 +131,7 @@ module Encomium
         wos_titles.each do |r|
           print r["title"] + " " + r["publisher"] + " " + r["issn"] + " "
           print r["eissn"] + " " if r["eissn"]
-          print r["collection"].join("; ")
+          print r["collections"].join("; ")
           puts
         end
         false
@@ -159,8 +159,9 @@ module Encomium
 
     def process_journals
       DataStream::Reader.new(@journalid_index, id_format: :string).each do |work_id, records|
-        skip = false
-        wos_titles      = records.select {|r| r["type"] == "WebOfScienceTitle"}
+        wos_titles = records.select {|r| r["type"] == "WebOfScienceTitle"}
+        next unless wos_title_data_valid?(wos_titles)
+
         bibs            = records.select {|r| r["type"] == "BibRecord"}
         pub_summaries   = records.select {|r| r["type"] == "PubSummary"}
         use_summaries   = records.select {|r| r["type"] == "UseSummary"}
@@ -168,35 +169,16 @@ module Encomium
         all_citing_recs = records.select {|r| r["type"] == "CitingDocument"}
         citing_recs     = all_citing_recs.size == 0 ? [] : deduplicate_citing_documents(all_citing_recs)
 
-        wos_titles = Encomium.consolidate_wos_records(wos_titles) if wos_titles.size > 1
-        if wos_titles.size > 1
-          skip = true
-          puts "WARNING: multiple WOS Titles Merged by ISSN"
-          wos_titles.each do |r|
-            print r["title"] + " " + r["publisher"] + " " + r["issn"] + " "
-            print r["eissn"] + " " if r["eissn"]
-            print r["collection"].join("; ")
-            puts
-          end
-        end
-        next if skip
-
         wos_title = wos_titles.first
         cats = wos_title["categories"].join("; ")
-        # TODO: make this always an Array
-        cols = wos_title["collection"].is_a?(Array) ? wos_title["collection"].join("; ") : wos_title["collection"]
+        cols = wos_title["collections"].join("; ")
         row = [wos_title["title"], wos_title["issn"], wos_title["eissn"], wos_title["publisher"], cats, cols]
 
         row << bibs.size
         row << bibs.map {|b| b["title"]}.uniq.join("; ")
-        row << bibs.map {|b| b["topClassifications"]}.flatten.compact.uniq.join("; ")
+        row << bibs.map {|b| b["lc_classes"]}.flatten.compact.uniq.join("; ")
         row << bibs.map {|b| b["issns"]}.flatten.uniq.join("; ")
-
-        row << bibs.map {|b| b["oclcNumbers"].nil? ? nil : b["oclcNumbers"].split("; ")}
-                   .flatten
-                   .compact
-                   .uniq
-                   .join("; ")
+        row << bibs.map {|b| b["oclc_numbers"]}.flatten.compact.uniq.join("; ")
 
         row << publisher_recs.reduce(Set.new) {|pubs, rec| pubs += rec["publishers"].split("; ")}.to_a.join("; ")
 

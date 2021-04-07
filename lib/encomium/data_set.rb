@@ -3,15 +3,15 @@ module Encomium
 
 
     TABLES = {
-      "journals" => ["id", "title", "issn", "eissn", "lc_classes", "publisher_id"],
-      "categories" => ["id", "name"],
-      "categories_journals" => ["category_id", "journal_id"],
-      "collections" => ["id", "name"],
-      "collections_journals" => ["collection_id", "journal_id"],
-      "publishers" => ["id", "name"],
+      "journals"              => ["id", "title", "issn", "eissn", "lc_classes", "publisher_id"],
+      "categories"            => ["id", "name"],
+      "categories_journals"   => ["category_id", "journal_id"],
+      "collections"           => ["id", "name"],
+      "collections_journals"  => ["collection_id", "journal_id"],
+      "publishers"            => ["id", "name"],
       "publication_summaries" => ["id", "journal_id", "date", "institution", "article_count", "grant_article_count"],
-      "use_summaries" => ["id", "journal_id", "date", "institution", "use_count"],
-      "citation_summaries" => ["id", "journal_id", "date", "institution", "citation_count"]
+      "use_summaries"         => ["id", "journal_id", "date", "institution", "use_count"],
+      "citation_summaries"    => ["id", "journal_id", "date", "institution", "citation_count"]
     }
 
 

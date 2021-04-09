@@ -2,6 +2,8 @@ module Encomium
   module MARC
     class BibRecord
 
+      TOP_LC_CLASS_PATTERN = /^([A-Z]+)([0-9]+(\.[0-9]+)*).*/
+
       attr_reader :title, :issns, :oclc_numbers, :lc_classes, :type
 
       def initialize(marc_record)
@@ -24,14 +26,18 @@ module Encomium
         @title        = remove_trailing_punct(@record["245"]["a"])
         @issns        = field_spec_values(@record, "022a:022e:776x")
         @oclc_numbers = self.primary_oclc_numbers + self.related_oclc_numbers
-        @lc_classes   = parse_valid_lc_classes
+        @lc_classes   = parse_lc_classes
         @type         = "BibRecord"
       end
 
 
-      def parse_valid_lc_classes
+      def parse_lc_classes
         field_spec_values(@record, "050a:090a")
-            .select {|lc_class| lc_class != "ISSN Record"}
+            .map {|lc_class|   lc_class.gsub(/[\[\]]/, "")}
+            .map {|lc_class|   lc_class.match(TOP_LC_CLASS_PATTERN)}
+            .map {|match_data| match_data.nil? ? nil : match_data[1] + match_data[2]}
+            .compact
+            .uniq
       end
 
 

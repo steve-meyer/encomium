@@ -24,3 +24,10 @@ def table_data(name)
   data_dir = File.expand_path(File.dirname(__FILE__) + "/support/database")
   CSV.open("#{data_dir}/#{name}.tsv", headers: true, col_sep: "\t", quote_char: nil).map {|row| row.to_h}
 end
+
+
+def get_bib_record(filename)
+  marc_file  = File.expand_path(File.dirname(__FILE__) + "/support/marc/" + filename)
+  marc_record = MARC::Record.new_from_marc( File.read(marc_file) )
+  Encomium::MARC::BibRecord.new(marc_record)
+end

@@ -24,8 +24,14 @@ module Encomium
         @title        = remove_trailing_punct(@record["245"]["a"])
         @issns        = field_spec_values(@record, "022a:022e:776x")
         @oclc_numbers = self.primary_oclc_numbers + self.related_oclc_numbers
-        @lc_classes   = field_spec_values(@record, "050a:090a")
+        @lc_classes   = parse_valid_lc_classes
         @type         = "BibRecord"
+      end
+
+
+      def parse_valid_lc_classes
+        field_spec_values(@record, "050a:090a")
+            .select {|lc_class| lc_class != "ISSN Record"}
       end
 
 

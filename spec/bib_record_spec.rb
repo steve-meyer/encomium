@@ -35,4 +35,21 @@ RSpec.describe Encomium::MARC::BibRecord do
       expect(@bib_record.to_json).to eq(expected)
     end
   end
+
+
+  context "when encountering records with junk LC Class data" do
+    before(:all) do
+      marc_file  = File.expand_path(File.dirname(__FILE__) + "/support/marc/bad-lc-class.mrc")
+      marc_record = MARC::Record.new_from_marc( File.read(marc_file) )
+      @bib_record = Encomium::MARC::BibRecord.new(marc_record)
+    end
+
+    it "should not include an LC class for 'ISSN Record'" do
+      expect(@bib_record.lc_classes).not_to include("ISSN Record")
+    end
+
+    it "should include the records valid LC Class" do
+      expect(@bib_record.lc_classes).to include("AM1")
+    end
+  end
 end

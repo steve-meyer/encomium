@@ -45,6 +45,59 @@ RSpec.describe Encomium::DataSet do
       end
     end
 
+    context "an entry in the LC classes table" do
+      before(:all) do
+        @lc_class_data = table_data("lc_classifications")
+        @journals_lcclasses = table_data("journals_lc_classifications")
+      end
+
+      context "the LC classification" do
+        before(:all) do
+          @lc_class = @lc_class_data.first
+        end
+
+        it "has a code" do
+          expect(@lc_class["code"]).to eq("QC")
+        end
+
+        it "has a start range number" do
+          expect(@lc_class["range_start"]).to eq("170.0")
+        end
+
+        it "has an end range number" do
+          expect(@lc_class["range_end"]).to eq("197.0")
+        end
+
+        it "has a top classification" do
+          expect(@lc_class["section"]).to eq("Science")
+        end
+
+        it "has a group 1 label" do
+          expect(@lc_class["group_1"]).to eq("Physics")
+        end
+
+        it "has a group 2 label" do
+          expect(@lc_class["group_2"]).to eq("Atomic physics. Constitution and properties of matter Including molecular physics, relativity, quantum theory, and solid state physics")
+        end
+
+        it "has a group 3 label" do
+          expect(@lc_class["group_3"]).to be nil
+        end
+
+        it "has a group 4 label" do
+          expect(@lc_class["group_4"]).to be nil
+        end
+
+        it "has a group 5 label" do
+          expect(@lc_class["group_5"]).to be nil
+        end
+      end
+
+      it "creates the journals/LC classes join table entry" do
+        expect(@journals_lcclasses).to include({"journal_id" => "1", "lc_classification_id" => "1"})
+      end
+    end
+
     context "an entry in the categories table" do
       before(:all) do
         @categories_data    = table_data("categories")

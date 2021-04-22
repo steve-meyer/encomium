@@ -2,6 +2,7 @@
 
 require "csv"
 require "json"
+require "yaml"
 require "fileutils"
 require "marc"
 require "data_stream"

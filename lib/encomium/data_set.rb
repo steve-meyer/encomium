@@ -11,7 +11,9 @@ module Encomium
       "publishers"            => ["id", "name"],
       "publication_summaries" => ["id", "journal_id", "date", "institution", "article_count", "grant_article_count"],
       "use_summaries"         => ["id", "journal_id", "date", "institution", "use_count"],
-      "citation_summaries"    => ["id", "journal_id", "date", "institution", "citation_count"]
+      "citation_summaries"    => ["id", "journal_id", "date", "institution", "citation_count"],
+      "lc_classifications"    => ["id", "section", "code", "range_start", "range_end", "group_1", "group_2", "group_3", "group_4", "group_5"],
+      "journals_lc_classifications" => ["journal_id", "lc_classification_id"]
     }
 
 
@@ -33,6 +35,7 @@ module Encomium
 
 
     def generate_tables
+      load_lc_class_data
       open_table_files
       setup_lookup_tables
       generate_table_files
@@ -43,11 +46,24 @@ module Encomium
     private
 
 
+    def load_lc_class_data
+      config_dir = File.expand_path(File.dirname(__FILE__) + "../../../config/")
+
+      top_classifications_file = config_dir + "/lc_top_classifications.yml"
+      @top_classificaitons = YAML.load_file(top_classifications_file)
+
+      lc_classifications_file = config_dir + "/lc-classifications.csv"
+      @call_number_ranges     = CSV.open(lc_classifications_file, headers: true).map {|row| row.to_h}
+      @lc_class_pks           = Hash.new
+    end
+
+
     def generate_table_files
       @journal_counter             = 0
       @publication_summary_counter = 0
       @use_summary_counter         = 0
       @citation_summary_counter    = 0
+      @lc_classification_counter   = 0
 
       DataStream::Reader.new(@journalid_index, id_format: :string).each do |work_id, records|
         wos_titles = records.select {|r| r["type"] == "WebOfScienceTitle"}
@@ -61,15 +77,71 @@ module Encomium
         all_citing_recs  = records.select {|r| r["type"] == "CitingDocument"}
         citing_recs      = all_citing_recs.size == 0 ? [] : deduplicate_citing_documents(all_citing_recs)
 
-        lc_classes   = bibs.map {|b| b["lc_classes"]}.flatten.compact.uniq.join("; ")
+        lc_classes   = bibs.map {|b| b["lc_classes"]}.flatten.compact.uniq
         publisher_id = @lookup_tables["publishers"][title["publisher"]]
 
-        journal_row = [@journal_counter, title["title"], title["issn"], title["eissn"], lc_classes, publisher_id]
-        @tables["journals"] << journal_row
+        @tables["journals"] << [
+          @journal_counter,
+          title["title"],
+          title["issn"],
+          title["eissn"],
+          lc_classes.join("; "),
+          publisher_id
+        ]
 
         process_categories_collections(title)
         process_summary_data(pub_summaries, use_summaries, citing_recs)
+        process_lc_classifications(lc_classes)
       end
+    end
+
+
+    def process_lc_classifications(lc_classes)
+      find_or_create_lc_classifications(lc_classes).each do |lc_classification_id|
+        @tables["journals_lc_classifications"] << [@journal_counter, lc_classification_id]
+      end
+    end
+
+
+    def find_or_create_lc_classifications(lc_classes)
+      lc_classes.reduce(Array.new) do |matches, classification|
+        subclass, number = classification.match(/^([A-Z]+)([0-9]+\.{0,1}[0-9]+).*/).captures
+
+        # Using the parsed subclass and numeric component, collect each against the configured call number ranges
+        @call_number_ranges.select {|range| range["Classification Code"] == subclass}.each do |sub_range|
+          if number.to_f.between?(sub_range["Start Range Number"].to_f, sub_range["End Range Number"].to_f)
+            key         = sub_range["Start Range"] + "::" + sub_range["End Range"]
+            lc_class_pk = @lc_class_pks[key].nil? ? create_lc_classification(sub_range) : @lc_class_pks[key]
+            matches    << lc_class_pk
+          end
+        end
+        matches
+      end
+    end
+
+
+    def create_lc_classification(data)
+      # First, add an entry to the serialized table
+      @lc_classification_counter += 1
+      @tables["lc_classifications"] << [
+        @lc_classification_counter,
+        @top_classificaitons[data["Classification Code"][0]],
+        data["Classification Code"],
+        data["Start Range Number"],
+        data["End Range Number"],
+        data["Group1"],
+        data["Group2"],
+        data["Group3"],
+        data["Group4"],
+        data["Group5"]
+      ]
+
+      # Second, add the entry to the in-memory lookup table so a duplicate is not created
+      lookup_key = data["Start Range"] + "::" + data["End Range"]
+      @lc_class_pks[lookup_key] = @lc_classification_counter
+
+      # Finally, return the PK
+      @lc_classification_counter
     end
 
 
@@ -287,7 +359,6 @@ module Encomium
     def monthly_headers
       Encomium::DataSet::BASE_FIELDS + ["Date"] + Encomium::DataSet::INST_FIELDS
     end
-
 
 
     BASE_FIELDS = [

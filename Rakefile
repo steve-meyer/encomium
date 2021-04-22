@@ -19,7 +19,7 @@ usesummary_idx = output_dir + "/issn-indexed-use-summaries.tsv"
 issn_idx       = output_dir + "/issn-indexed-data.tsv"
 journalid_idx  = output_dir + "/journalid-indexed-data.tsv"
 summary_output = output_dir + "/combined-data-summary.csv"
-journals_table = output_dir + "/database/journals.tsv"
+load_tables    = Encomium::DataSet::TABLES.keys.map {|tbl_name| output_dir + "/database/#{tbl_name}.tsv"}
 
 # Inputs
 wostitle_csv = FileList[base_dir + "/wos-journals/*.csv"].each {|csv_file|  file wostitles_idx => csv_file}
@@ -27,19 +27,17 @@ marc_files   = FileList[base_dir + "/MARC/*.mrc"].each         {|marc_file| file
 use_data     = FileList[base_dir + "/COUNTER/**/*.csv"].each   {|use_file|  file usesummary_idx => use_file}
 article_data = FileList[base_dir + "/articles/**/*.json"]
 cited_docs   = FileList[base_dir + "/cited-articles/*.json"]
-article_data.each                {|article_file| file pubsummary_idx => article_file}
-(cited_docs + article_data).each {|article_file| file citsummary_idx => article_file}
+article_data.each                {|article_file|  file pubsummary_idx => article_file}
+(cited_docs + article_data).each {|article_file|  file citsummary_idx => article_file}
+load_tables.each                 {|load_tbl_file| file load_tbl_file  => journalid_idx}
 
 
 task :build => [wostitles_idx, bibtitles_idx, pubsummary_idx, citsummary_idx, usesummary_idx, issn_idx, journalid_idx, summary_output]
 
 
-task :db_tables => journals_table
-
-
-file journals_table => journalid_idx do
+task :db_tables => load_tables do
   puts "Generating database tables"
-  data_dir = File.dirname(journals_table)
+  data_dir = output_dir + "/database"
   FileUtils.mkdir_p(data_dir)
   Encomium::DataSet.new(journalid_idx, data_dir).generate_tables
 end

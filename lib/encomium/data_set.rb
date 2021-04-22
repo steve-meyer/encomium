@@ -105,9 +105,11 @@ module Encomium
 
     def find_or_create_lc_classifications(lc_classes)
       lc_classes.reduce(Array.new) do |matches, classification|
-        subclass, number = classification.match(/^([A-Z]+)([0-9]+\.{0,1}[0-9]+).*/).captures
+        lc_pattern_data = classification.match(/^([A-Z]+)([0-9]+\.{0,1}[0-9]+).*/)
+        return matches unless lc_pattern_data
 
         # Using the parsed subclass and numeric component, collect each against the configured call number ranges
+        subclass, number = lc_pattern_data.captures
         @call_number_ranges.select {|range| range["Classification Code"] == subclass}.each do |sub_range|
           if number.to_f.between?(sub_range["Start Range Number"].to_f, sub_range["End Range Number"].to_f)
             key         = sub_range["Start Range"] + "::" + sub_range["End Range"]

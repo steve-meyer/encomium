@@ -21,7 +21,7 @@ module Encomium
               @article_count += 1
               article = JSON.parse(line)
 
-              grants = article["grants"].nil? ? [] : article["grants"].select {|grant| !grant["ids"].nil? || grant["ids"].size == 0}
+              grants = article["grants"].nil? ? [] : article["grants"].select {|grant| !grant["ids"].nil? && grant["ids"].size > 0}
               issns  = article["identifiers"].select {|id| id["type"] == "issn" || id["type"] == "eissn"}
                                              .map    {|id| id["value"]}
                                              .uniq

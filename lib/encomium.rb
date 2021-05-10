@@ -14,6 +14,7 @@ require_relative "encomium/wos/journal_list"
 require_relative "encomium/wos/journal"
 require_relative "encomium/wos/pub_summary"
 require_relative "encomium/wos/citation_summary"
+require_relative "encomium/wos/grant_summary"
 require_relative "encomium/marc/bib_record"
 
 

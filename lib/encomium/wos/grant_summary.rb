@@ -31,6 +31,7 @@ module Encomium
               issns.each do |issn|
                 grants.each do |grant|
                   grant["institution"] = inst
+                  grant["type"] = "GrantRecord"
                   output_file.puts([issn, grant.to_json].join("\t"))
                 end # grants.each do |grant|
               end # issns.each do |issn|

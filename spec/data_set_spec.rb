@@ -123,7 +123,7 @@ RSpec.describe Encomium::DataSet do
 
     context "the collections table" do
       before(:all) do
-        @collections_data    = table_data("collections")
+        @collections_data   = table_data("collections")
         @cols_journals_data = table_data("collections_journals")
       end
 
@@ -253,6 +253,38 @@ RSpec.describe Encomium::DataSet do
 
       it "sums citations for an institution but is careful to deduplicate by citation ID" do
         expect(@citation_summary["citation_count"]).to eq("2.0")
+      end
+    end
+
+    context "the grants tables" do
+      before(:all) do
+        @grants = table_data("grants")
+        @agencies = table_data("agencies")
+        @agency_grant_data = table_data("agencies_grants")
+        @grant_journal_data = table_data("grants_journals")
+      end
+
+      it "has grant identifiers" do
+        expect(@grants.first["identifiers"]).to eq("R01-1234; AB054321")
+      end
+
+      it "has grant recipient institution" do
+        expect(@grants.first["institution"]).to eq("uw")
+      end
+
+      it "has a researcher submitted grant name" do
+        expect(@grants.first["grant_agency_name"]).to eq("NIH BDDOC")
+      end
+
+      it "has preferred agency names" do
+        expect(@agencies.first["name"]).to eq("National Institutes of Health")
+        expect(@agencies.last["name"]).to  eq("Big Dollars Doled Out Council")
+        expect(@agency_grant_data).to include({"agency_id" => "1", "grant_id" => "1"})
+        expect(@agency_grant_data).to include({"agency_id" => "2", "grant_id" => "1"})
+      end
+
+      it "associates the grant with the journal" do
+        expect(@grant_journal_data).to include({"grant_id" => "1", "journal_id" => "1"})
       end
     end
   end

@@ -12,6 +12,10 @@ module Encomium
       "publication_summaries" => ["id", "journal_id", "date", "institution", "article_count", "grant_article_count"],
       "use_summaries"         => ["id", "journal_id", "date", "institution", "use_count"],
       "citation_summaries"    => ["id", "journal_id", "date", "institution", "citation_count"],
+      "grants"                => ["id", "identifiers", "institution", "grant_agency_name"],
+      "agencies"              => ["id", "name"],
+      "agencies_grants"       => ["agency_id", "grant_id"],
+      "grants_journals"       => ["grant_id", "journal_id"],
       "lc_classifications"    => ["id", "section", "code", "range_start", "range_end", "group_1", "group_2", "group_3", "group_4", "group_5"],
       "journals_lc_classifications" => ["journal_id", "lc_classification_id"]
     }
@@ -38,6 +42,7 @@ module Encomium
       load_lc_class_data
       open_table_files
       setup_lookup_tables
+      setup_grants_tables
       generate_table_files
       close_table_files
     end
@@ -64,6 +69,8 @@ module Encomium
       @use_summary_counter         = 0
       @citation_summary_counter    = 0
       @lc_classification_counter   = 0
+      @grant_counter               = 0
+      @agency_counter              = 0
 
       DataStream::Reader.new(@journalid_index, id_format: :string).each do |work_id, records|
         wos_titles = records.select {|r| r["type"] == "WebOfScienceTitle"}
@@ -74,6 +81,7 @@ module Encomium
         bibs             = records.select {|r| r["type"] == "BibRecord"}
         pub_summaries    = records.select {|r| r["type"] == "PubSummary"}
         use_summaries    = records.select {|r| r["type"] == "UseSummary"}
+        grants           = records.select {|r| r["type"] == "GrantRecord"}
         all_citing_recs  = records.select {|r| r["type"] == "CitingDocument"}
         citing_recs      = all_citing_recs.size == 0 ? [] : deduplicate_citing_documents(all_citing_recs)
 
@@ -92,6 +100,26 @@ module Encomium
         process_categories_collections(title)
         process_summary_data(pub_summaries, use_summaries, citing_recs)
         process_lc_classifications(lc_classes)
+        process_grants(grants)
+      end
+    end
+
+
+    def setup_grants_tables
+      @agencies = Hash.new do |hash, agency_name|
+        @agency_counter += 1
+        @tables["agencies"] << [@agency_counter, agency_name]
+        hash[agency_name] = @agency_counter
+      end
+    end
+
+
+    def process_grants(grants)
+      grants.each do |grant|
+        @grant_counter += 1
+        @tables["grants"] << [@grant_counter, grant["ids"].join("; "), grant["institution"], grant["agency"]]
+        grant["pref_agency_names"].each {|name| @tables["agencies_grants"] << [@agencies[name], @grant_counter]}
+        @tables["grants_journals"] << [@grant_counter, @journal_counter]
       end
     end
 

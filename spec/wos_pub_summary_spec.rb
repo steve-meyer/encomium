@@ -11,13 +11,13 @@ RSpec.describe Encomium::WOS::PubSummary do
   end
 
   it "splits authorship counts across ISSNs" do
-    expect(@pub_summary.journals["2469-9985"][2015][10][:mn][:articles]).to eq(0.5)
-    expect(@pub_summary.journals["2469-9993"][2015][10][:mn][:articles]).to eq(0.5)
+    expect(@pub_summary.journals["1089-490X"][2015][10][:mn][:articles]).to eq(0.5)
+    expect(@pub_summary.journals["0556-2813"][2015][10][:mn][:articles]).to eq(0.5)
   end
 
   it "counts authorships with grants (and splits across ISSNs)" do
-    expect(@pub_summary.journals["2469-9985"][2015][10][:mn][:with_grants]).to eq(0.5)
-    expect(@pub_summary.journals["2469-9993"][2015][10][:mn][:with_grants]).to eq(0.5)
+    expect(@pub_summary.journals["1089-490X"][2015][10][:mn][:with_grants]).to eq(0.5)
+    expect(@pub_summary.journals["0556-2813"][2015][10][:mn][:with_grants]).to eq(0.5)
   end
 
   it "sets the pub month to January when it is missing" do

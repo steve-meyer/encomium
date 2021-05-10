@@ -37,7 +37,7 @@ RSpec.describe Encomium::WOS::CitationSummary do
     end
 
     it "has multiple citing docs for the same cited article when the citing doc has multiple ISSNs" do
-      expect(@citing_docs.map {|d| d["citation_id"]}).to eq([1, 1, 31])
+      expect(@citing_docs.map {|d| d["citation_id"]}).to eq([5, 5, 30])
     end
   end
 end

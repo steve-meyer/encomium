@@ -82,8 +82,8 @@ module Encomium
 
               if article["references"]
                 article["references"].each do |reference|
-                  citation_id = counter
                   if !reference["id"].nil? && reference["id"][0,4] == "WOS:" && !reference["id"].match('\.')
+                    citation_id = counter
                     record = {
                       citation_id: citation_id, citing_article_id: article["id"],
                       date: parse_date(article), citing_inst: institution,

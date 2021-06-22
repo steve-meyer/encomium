@@ -12,5 +12,5 @@
 .rspec_status
 
 
-/config/*.yml
+/config/files.yml
 Gemfile.lock

@@ -16,7 +16,7 @@ module Encomium
       "agencies"              => ["id", "name"],
       "agencies_grants"       => ["agency_id", "grant_id"],
       "grants_journals"       => ["grant_id", "journal_id"],
-      "lc_classifications"    => ["id", "section", "code", "range_start", "range_end", "group_1", "group_2", "group_3", "group_4", "group_5"],
+      "lc_classifications"    => ["id", "normalized_subject", "lj_subject", "section", "code", "range_start", "range_end", "group_1", "group_2", "group_3", "group_4", "group_5"],
       "journals_lc_classifications" => ["journal_id", "lc_classification_id"]
     }
 
@@ -58,7 +58,12 @@ module Encomium
       @top_classificaitons = YAML.load_file(top_classifications_file)
 
       lc_classifications_file = config_dir + "/lc-classifications.csv"
+      lc_normalizations_file  = config_dir + "/lc-classifications-normalized.csv"
       @call_number_ranges     = CSV.open(lc_classifications_file, headers: true).map {|row| row.to_h}
+      @normalized_subjects    = CSV.open(lc_normalizations_file, headers: true).map do |row|
+        key = row["Code"] + row["Range Start"] + "::" + row["Code"] + row["Range End"]
+        [key, {normalized: row["Normalized Subject"], lj_subject: row["LJ Subject"]}]
+      end.to_h
       @lc_class_pks           = Hash.new
     end
 
@@ -153,8 +158,13 @@ module Encomium
     def create_lc_classification(data)
       # First, add an entry to the serialized table
       @lc_classification_counter += 1
+      lookup_key = data["Start Range"] + "::" + data["End Range"]
+      normalized = @normalized_subjects[lookup_key]
+
       @tables["lc_classifications"] << [
         @lc_classification_counter,
+        normalized[:normalized],
+        normalized[:lj_subject],
         @top_classificaitons[data["Classification Code"][0]],
         data["Classification Code"],
         data["Start Range Number"],
@@ -167,7 +177,6 @@ module Encomium
       ]
 
       # Second, add the entry to the in-memory lookup table so a duplicate is not created
-      lookup_key = data["Start Range"] + "::" + data["End Range"]
       @lc_class_pks[lookup_key] = @lc_classification_counter
 
       # Finally, return the PK

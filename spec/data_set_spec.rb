@@ -72,6 +72,14 @@ RSpec.describe Encomium::DataSet do
           expect(@lc_class["section"]).to eq("Science")
         end
 
+        it "has a normalized subject" do
+          expect(@lc_class["normalized_subject"]).to eq("Physics (QC)")
+        end
+
+        it "has a Library Journal subject" do
+          expect(@lc_class["lj_subject"]).to eq("Physics")
+        end
+
         it "has a group 1 label" do
           expect(@lc_class["group_1"]).to eq("Physics")
         end

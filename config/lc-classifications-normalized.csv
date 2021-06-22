@@ -1,0 +1,1569 @@
+Code,Range Start,Range End,Normalized Subject,LJ Subject
+AG,2,600,General (A),General Works
+AM,100.001,110.999,General (A),General Works
+AM,111,160,General (A),General Works
+AM,200,501,General (A),General Works
+AP,1,100.999,General (A),General Works
+AS,11,785,General (A),General Works
+AS,785.001,945,General (A),General Works
+AZ,101,181,General (A),General Works
+AZ,181.001,190.999,General (A),General Works
+B,1,68.999,"Philosophy (B-BD, BH, BJ)",Philosophy & Religion
+B,99.001,107.999,"Philosophy (B-BD, BH, BJ)",Philosophy & Religion
+B,108,708,"Philosophy (B-BD, BH, BJ)",Philosophy & Religion
+B,720,765,"Philosophy (B-BD, BH, BJ)",Philosophy & Religion
+B,770,785,"Philosophy (B-BD, BH, BJ)",Philosophy & Religion
+B,790,807.999,"Philosophy (B-BD, BH, BJ)",Philosophy & Religion
+B,808,849,"Philosophy (B-BD, BH, BJ)",Philosophy & Religion
+B,850,5739,"Philosophy (B-BD, BH, BJ)",Philosophy & Religion
+BC,11,24.999,"Philosophy (B-BD, BH, BJ)",Philosophy & Religion
+BC,39.001,59.999,"Philosophy (B-BD, BH, BJ)",Philosophy & Religion
+BD,95,131,"Philosophy (B-BD, BH, BJ)",Philosophy & Religion
+BD,143,237,"Philosophy (B-BD, BH, BJ)",Philosophy & Religion
+BD,240,260,"Philosophy (B-BD, BH, BJ)",Philosophy & Religion
+BD,300,450,"Philosophy (B-BD, BH, BJ)",Philosophy & Religion
+BD,493,701,"Philosophy (B-BD, BH, BJ)",Philosophy & Religion
+BF,1,37.999,Psychology (BF),Psychology
+BF,38,64,Psychology (BF),Psychology
+BF,64.001,172.999,Psychology (BF),Psychology
+BF,173,175.5,Psychology (BF),Psychology
+BF,176,176.5,Psychology (BF),Psychology
+BF,180,198.7,Psychology (BF),Psychology
+BF,198.701,202.999,Psychology (BF),Psychology
+BF,207,209,Psychology (BF),Psychology
+BF,231,299,Psychology (BF),Psychology
+BF,309,499,Psychology (BF),Psychology
+BF,511,593,Psychology (BF),Psychology
+BF,636,637,Psychology (BF),Psychology
+BF,660,685,Psychology (BF),Psychology
+BF,692,692.5,Psychology (BF),Psychology
+BF,697,697.5,Psychology (BF),Psychology
+BF,698,698.9,Psychology (BF),Psychology
+BF,699,711,Psychology (BF),Psychology
+BF,712,724.85,Psychology (BF),Psychology
+BF,727.001,794.999,Psychology (BF),Psychology
+BF,1001,1045,Psychology (BF),Psychology
+BF,1048,1108,Psychology (BF),Psychology
+BF,1562.5,1584,Psychology (BF),Psychology
+BH,301,301,Psychology (BF),Psychology
+BJ,1,70.999,"Philosophy (B-BD, BH, BJ)",Philosophy & Religion
+BJ,1188,1295,"Philosophy (B-BD, BH, BJ)",Philosophy & Religion
+BJ,1395.001,1517.999,"Philosophy (B-BD, BH, BJ)",Philosophy & Religion
+BJ,1518,1697,"Philosophy (B-BD, BH, BJ)",Philosophy & Religion
+BJ,1725,1725,"Philosophy (B-BD, BH, BJ)",Philosophy & Religion
+BL,1,50,Religion (BL-BX),Philosophy & Religion
+BL,51,65,Religion (BL-BX),Philosophy & Religion
+BL,239,265,Religion (BL-BX),Philosophy & Religion
+BL,624,629.5,Religion (BL-BX),Philosophy & Religion
+BL,632.501,659.999,Religion (BL-BX),Philosophy & Religion
+BL,689,699.999,Religion (BL-BX),Philosophy & Religion
+BL,900,980,Religion (BL-BX),Philosophy & Religion
+BL,1055,1055,Religion (BL-BX),Philosophy & Religion
+BL,1060,1060,Religion (BL-BX),Philosophy & Religion
+BL,1100,1107.5,Religion (BL-BX),Philosophy & Religion
+BL,1225.2,1243.58,Religion (BL-BX),Philosophy & Religion
+BL,1790,1829.999,Religion (BL-BX),Philosophy & Religion
+BL,2195,2215.999,Religion (BL-BX),Philosophy & Religion
+BL,2390,2419.999,Religion (BL-BX),Philosophy & Religion
+BL,2460.001,2490,Religion (BL-BX),Philosophy & Religion
+BL,2700,2790,Religion (BL-BX),Philosophy & Religion
+BM,70,135,Religion (BL-BX),Philosophy & Religion
+BM,150,200.999,Religion (BL-BX),Philosophy & Religion
+BM,480,488.8,Religion (BL-BX),Philosophy & Religion
+BM,536.001,538,Religion (BL-BX),Philosophy & Religion
+BP,50,68,Religion (BL-BX),Philosophy & Religion
+BP,130,134,Religion (BL-BX),Philosophy & Religion
+BP,160,165,Religion (BL-BX),Philosophy & Religion
+BP,192,194.9,Religion (BL-BX),Philosophy & Religion
+BR,60,67,Religion (BL-BX),Philosophy & Religion
+BR,67.001,114.999,Religion (BL-BX),Philosophy & Religion
+BR,115,115,Religion (BL-BX),Philosophy & Religion
+BR,115.001,129.999,Religion (BL-BX),Philosophy & Religion
+BR,140,159.999,Religion (BL-BX),Philosophy & Religion
+BR,160,275,Religion (BL-BX),Philosophy & Religion
+BR,290,323.499,Religion (BL-BX),Philosophy & Religion
+BR,334.201,481,Religion (BL-BX),Philosophy & Religion
+BR,500,1510,Religion (BL-BX),Philosophy & Religion
+BR,1620.001,1689.999,Religion (BL-BX),Philosophy & Religion
+BS,410,499.999,Religion (BL-BX),Philosophy & Religion
+BS,500,534.8,Religion (BL-BX),Philosophy & Religion
+BS,537.001,545.999,Religion (BL-BX),Philosophy & Religion
+BS,613.001,646.999,Religion (BL-BX),Philosophy & Religion
+BS,650,667,Religion (BL-BX),Philosophy & Religion
+BS,1200,1830,Religion (BL-BX),Philosophy & Religion
+BS,2350,2393,Religion (BL-BX),Philosophy & Religion
+BT,37.001,92.999,Religion (BL-BX),Philosophy & Religion
+BT,296,500,Religion (BL-BX),Philosophy & Religion
+BT,695,749,Religion (BL-BX),Philosophy & Religion
+BV,590,597.999,Religion (BL-BX),Philosophy & Religion
+BV,629,631,Religion (BL-BX),Philosophy & Religion
+BV,1460,1615,Religion (BL-BX),Philosophy & Religion
+BV,2000,2122.999,Religion (BL-BX),Philosophy & Religion
+BV,2350,2595,Religion (BL-BX),Philosophy & Religion
+BV,2610,2695,Religion (BL-BX),Philosophy & Religion
+BV,4000,4018.999,Religion (BL-BX),Philosophy & Religion
+BV,4019,4167,Religion (BL-BX),Philosophy & Religion
+BV,4200,4238.999,Religion (BL-BX),Philosophy & Religion
+BV,4317.001,4389.999,Religion (BL-BX),Philosophy & Religion
+BV,4526.201,4624.999,Religion (BL-BX),Philosophy & Religion
+BV,5070,5095,Religion (BL-BX),Philosophy & Religion
+BX,100,107,Religion (BL-BX),Philosophy & Religion
+BX,800,839,Religion (BL-BX),Philosophy & Religion
+BX,940,1745,Religion (BL-BX),Philosophy & Religion
+BX,1793.001,1799.999,Religion (BL-BX),Philosophy & Religion
+BX,1800,1920,Religion (BL-BX),Philosophy & Religion
+BX,1970,2049.999,Religion (BL-BX),Philosophy & Religion
+BX,2400,2889.999,Religion (BL-BX),Philosophy & Religion
+BX,2890,4192,Religion (BL-BX),Philosophy & Religion
+BX,5001,5009,Religion (BL-BX),Philosophy & Religion
+BX,6201,6227,Religion (BL-BX),Philosophy & Religion
+BX,8551,8593,Religion (BL-BX),Philosophy & Religion
+BX,9401,9640,Religion (BL-BX),Philosophy & Religion
+CB,158,161,History (C-F),History
+CB,195,281,History (C-F),History
+CB,305,430,History (C-F),History
+CB,478,478,History (C-F),History
+CC,1,71.999,History (C-F),History
+CC,72,72.999,History (C-F),History
+CC,73,81,History (C-F),History
+CC,83,97,History (C-F),History
+CC,97.001,134.999,History (C-F),History
+CC,135,137,History (C-F),History
+CD,1,69.999,History (C-F),History
+CD,921,994.999,History (C-F),History
+CD,1000,4280,History (C-F),History
+CN,120,740,History (C-F),History
+CS,2300,3090,History (C-F),History
+CT,93,205.999,History (C-F),History
+D,1,24.5,History (C-F),History
+D,25,27,History (C-F),History
+D,31,34,History (C-F),History
+D,51,90,History (C-F),History
+D,111,134.999,History (C-F),History
+D,219,234,History (C-F),History
+D,242,250.999,History (C-F),History
+D,351,370.999,History (C-F),History
+D,371,379,History (C-F),History
+D,410,460.999,History (C-F),History
+D,731,838,History (C-F),History
+D,839,860,History (C-F),History
+D,880,888,History (C-F),History
+D,900,900.999,History (C-F),History
+D,901,980,History (C-F),History
+D,1050,2009,History (C-F),History
+DA,10,18.2,History (C-F),History
+DA,20,27.5,History (C-F),History
+DA,90,125,History (C-F),History
+DA,140,199,History (C-F),History
+DA,300,309.999,History (C-F),History
+DA,505,522,History (C-F),History
+DA,522.001,549.999,History (C-F),History
+DA,566,592,History (C-F),History
+DA,670,670,History (C-F),History
+DA,675,689,History (C-F),History
+DA,700,713,History (C-F),History
+DA,750,757.7,History (C-F),History
+DA,880,890,History (C-F),History
+DA,900,908.7,History (C-F),History
+DA,920,927,History (C-F),History
+DAW,1031,1051,History (C-F),History
+DB,29,34.5,History (C-F),History
+DB,101,785,History (C-F),History
+DC,21,29.3,History (C-F),History
+DC,30,34.5,History (C-F),History
+DC,110,110.999,History (C-F),History
+DC,139,249,History (C-F),History
+DC,411,424,History (C-F),History
+DC,611,611,History (C-F),History
+DD,51,78,History (C-F),History
+DD,99,120,History (C-F),History
+DE,80,100,History (C-F),History
+DF,10,16,History (C-F),History
+DF,75,136,History (C-F),History
+DF,501,518,History (C-F),History
+DF,520,542.4,History (C-F),History
+DF,741,748,History (C-F),History
+DG,11,16,History (C-F),History
+DG,401,421,History (C-F),History
+DG,431,457,History (C-F),History
+DG,532,537.8,History (C-F),History
+DG,538,538.999,History (C-F),History
+DG,552,552.999,History (C-F),History
+DG,576,583.8,History (C-F),History
+DG,803,817.3,History (C-F),History
+DH,401,430,History (C-F),History
+DK,1,32.999,History (C-F),History
+DK,266,292,History (C-F),History
+DK,293.001,499.999,History (C-F),History
+DK,502.3,502.75,History (C-F),History
+DK,503,503.919,History (C-F),History
+DK,508,508.919,History (C-F),History
+DK,510,540.999,History (C-F),History
+DK,609.001,651,History (C-F),History
+DK,751,781,History (C-F),History
+DL,121,142.5,History (C-F),History
+DL,401,414,History (C-F),History
+DL,420,442.5,History (C-F),History
+DL,601,614.5,History (C-F),History
+DP,44,53,History (C-F),History
+DP,56,75,History (C-F),History
+DP,76,86,History (C-F),History
+DP,91,91.999,History (C-F),History
+DP,97.3,99.999,History (C-F),History
+DP,100,123,History (C-F),History
+DP,160.801,160.999,History (C-F),History
+DP,201,203.999,History (C-F),History
+DP,233,249.999,History (C-F),History
+DP,302,302,History (C-F),History
+DP,501,520,History (C-F),History
+DP,528,534.5,History (C-F),History
+DP,702,702,History (C-F),History
+DR,20,27,History (C-F),History
+DR,32,48.5,History (C-F),History
+DR,51,56.7,History (C-F),History
+DR,219,229,History (C-F),History
+DR,279,280.74,History (C-F),History
+DR,296.001,400.999,History (C-F),History
+DR,401,419,History (C-F),History
+DR,436,446,History (C-F),History
+DR,1352,1485,History (C-F),History
+DR,1502,1619.999,History (C-F),History
+DR,1636.501,1645,History (C-F),History
+DS,13,28,History (C-F),History
+DS,31,35.2,History (C-F),History
+DS,35.3,35.77,History (C-F),History
+DS,36,36.899,History (C-F),History
+DS,41,53.999,History (C-F),History
+DS,54.951,57.999,History (C-F),History
+DS,61,66,History (C-F),History
+DS,101,108.999,History (C-F),History
+DS,111,111.9,History (C-F),History
+DS,111.901,113.199,History (C-F),History
+DS,114,128.2,History (C-F),History
+DS,133,151,History (C-F),History
+DS,201,217.999,History (C-F),History
+DS,251,260.699,History (C-F),History
+DS,262.001,267.999,History (C-F),History
+DS,327,329.4,History (C-F),History
+DS,331,349.799,History (C-F),History
+DS,401,429.999,History (C-F),History
+DS,432.001,432.999,History (C-F),History
+DS,501,518.149,History (C-F),History
+DS,518.15,518.9,History (C-F),History
+DS,520,523.999,History (C-F),History
+DS,556,556.999,History (C-F),History
+DS,561,568.999,History (C-F),History
+DS,591,594.999,History (C-F),History
+DS,600,605,History (C-F),History
+DS,611,630.999,History (C-F),History
+DS,646.3,646.34,History (C-F),History
+DS,651,664.999,History (C-F),History
+DS,701,729.999,History (C-F),History
+DS,731.001,732.999,History (C-F),History
+DS,733,779.32,History (C-F),History
+DS,801,832.999,History (C-F),History
+DS,901,904.799,History (C-F),History
+DT,12.251,14.999,History (C-F),History
+DT,16.001,16.999,History (C-F),History
+DT,56.8,62.999,History (C-F),History
+DT,160,166.999,History (C-F),History
+DT,268,269,History (C-F),History
+DT,301,312.999,History (C-F),History
+DT,365,365.499,History (C-F),History
+DT,671.001,1000.999,History (C-F),History
+DT,1754,1756.999,History (C-F),History
+DT,1772,1974,History (C-F),History
+DU,1,28.109,History (C-F),History
+DU,28.11,68,History (C-F),History
+DU,80,107.999,History (C-F),History
+DU,108,117.2,History (C-F),History
+DU,120,124.999,History (C-F),History
+DU,250,269.999,History (C-F),History
+DU,419,422,History (C-F),History
+DU,620,629,History (C-F),History
+DX,101,301,History (C-F),History
+E,11,28.999,History (C-F),History
+E,31,49.2,History (C-F),History
+E,51,73,History (C-F),History
+E,75,80.999,History (C-F),History
+E,99,99,History (C-F),History
+E,151,169.12,History (C-F),History
+E,171,172.999,History (C-F),History
+E,175.701,175.999,History (C-F),History
+E,181,181,History (C-F),History
+E,183,183.3,History (C-F),History
+E,183.7,183.799,History (C-F),History
+E,184,185.199,History (C-F),History
+E,185.2,185.89,History (C-F),History
+E,186,189,History (C-F),History
+E,337.5,337.5,History (C-F),History
+E,461,481.999,History (C-F),History
+E,660.001,661.699,History (C-F),History
+F,1,15,History (C-F),History
+F,116,130,History (C-F),History
+F,146,160,History (C-F),History
+F,191,205,History (C-F),History
+F,206,220,History (C-F),History
+F,221,235,History (C-F),History
+F,381,395,History (C-F),History
+F,406,420,History (C-F),History
+F,446,460,History (C-F),History
+F,590.3,596.3,History (C-F),History
+F,726,740,History (C-F),History
+F,786,790,History (C-F),History
+F,791,805,History (C-F),History
+F,806,820,History (C-F),History
+F,850.5,851.5,History (C-F),History
+F,856,870,History (C-F),History
+F,871,885,History (C-F),History
+F,886,900,History (C-F),History
+F,1001,1035,History (C-F),History
+F,1035.8,1035.8,History (C-F),History
+F,1201,1218.499,History (C-F),History
+F,1221.001,1392,History (C-F),History
+F,1401,1419,History (C-F),History
+F,1421,1434.999,History (C-F),History
+F,1751,1787.999,History (C-F),History
+F,2131,2133,History (C-F),History
+F,2141,2141,History (C-F),History
+F,2201,2239,History (C-F),History
+F,2251,2299,History (C-F),History
+F,2301,2349,History (C-F),History
+F,2501,2659,History (C-F),History
+F,2801,3021,History (C-F),History
+F,3051,3285,History (C-F),History
+F,3401,3619,History (C-F),History
+F,3701,3799,History (C-F),History
+G,1,64.999,Geography (G-GB),Geography
+G,70,70.6,Geography (G-GB),Geography
+G,70.601,79.999,Geography (G-GB),Geography
+G,108.501,139.999,Geography (G-GB),Geography
+G,141,141,Geography (G-GB),Geography
+G,149,154.899,Geography (G-GB),Geography
+G,154.9,155.8,Geography (G-GB),Geography
+G,503.001,520.999,Geography (G-GB),Geography
+G,550.001,574.999,Geography (G-GB),Geography
+G,575,890,Geography (G-GB),Geography
+GA,101,108.999,Geography (G-GB),Geography
+GB,3,399.999,Geography (G-GB),Geography
+GB,400,446.999,Geography (G-GB),Geography
+GB,471,478.995,Geography (G-GB),Geography
+GB,500,555,Geography (G-GB),Geography
+GB,561,649,Geography (G-GB),Geography
+GB,651,979.999,Geography (G-GB),Geography
+GB,1001,1199.8,Geography (G-GB),Geography
+GB,1601,2398,Geography (G-GB),Geography
+GB,2401,2598,Geography (G-GB),Geography
+GB,2801,2998,Geography (G-GB),Geography
+GB,5000,5030,Geography (G-GB),Geography
+GC,1,62.999,Oceanography (GC),Geography
+GC,83,87.6,Oceanography (GC),Geography
+GC,96,97.8,Oceanography (GC),Geography
+GC,97.801,99.999,Oceanography (GC),Geography
+GC,109,149,Oceanography (GC),Geography
+GC,190,190.5,Oceanography (GC),Geography
+GC,377,399,Oceanography (GC),Geography
+GC,401,881,Oceanography (GC),Geography
+GC,1000,1023,Oceanography (GC),Geography
+GC,1080,1581,Oceanography (GC),Geography
+GE,1,69.999,Environmental Sciences (GE),Geography
+GE,70,90,Environmental Sciences (GE),Geography
+GE,90.001,169.999,Environmental Sciences (GE),Geography
+GE,170,190,Environmental Sciences (GE),Geography
+GE,195,199,Environmental Sciences (GE),Geography
+GE,300,350,Environmental Sciences (GE),Geography
+GF,75,75,Anthropology (GF-GT),Anthropology
+GF,75.001,100.999,Anthropology (GF-GT),Anthropology
+GF,101,124.999,Anthropology (GF-GT),Anthropology
+GF,500,900,Anthropology (GF-GT),Anthropology
+GN,1,48.999,Anthropology (GF-GT),Anthropology
+GN,49,50.999,Anthropology (GF-GT),Anthropology
+GN,62.8,265,Anthropology (GF-GT),Anthropology
+GN,269,279,Anthropology (GF-GT),Anthropology
+GN,281,281.999,Anthropology (GF-GT),Anthropology
+GN,296,296.5,Anthropology (GF-GT),Anthropology
+GN,301,356.999,Anthropology (GF-GT),Anthropology
+GN,357,367,Anthropology (GF-GT),Anthropology
+GN,378,396,Anthropology (GF-GT),Anthropology
+GN,406,442,Anthropology (GF-GT),Anthropology
+GN,448,450.8,Anthropology (GF-GT),Anthropology
+GN,451,477.7,Anthropology (GF-GT),Anthropology
+GN,478,491.7,Anthropology (GF-GT),Anthropology
+GN,492,495.2,Anthropology (GF-GT),Anthropology
+GN,495.4,498,Anthropology (GF-GT),Anthropology
+GN,502,517,Anthropology (GF-GT),Anthropology
+GN,550,674,Anthropology (GF-GT),Anthropology
+GN,700,890,Anthropology (GF-GT),Anthropology
+GR,72,79,Anthropology (GF-GT),Anthropology
+GR,99.6,390,Anthropology (GF-GT),Anthropology
+GT,500,2370,Anthropology (GF-GT),Anthropology
+GV,1,181.349,Recreation & Sports (GV),Recreation
+GV,181.35,181.6,Recreation & Sports (GV),Recreation
+GV,191.2,198.944,Recreation & Sports (GV),Recreation
+GV,201,345.999,Recreation & Sports (GV),Recreation
+GV,351.501,400.999,Recreation & Sports (GV),Recreation
+GV,435,436.7,Recreation & Sports (GV),Recreation
+GV,557,710.999,Recreation & Sports (GV),Recreation
+GV,711.001,711.999,Recreation & Sports (GV),Recreation
+GV,712,725,Recreation & Sports (GV),Recreation
+GV,743,749,Recreation & Sports (GV),Recreation
+GV,861,1017,Recreation & Sports (GV),Recreation
+GV,1100,1150.9,Recreation & Sports (GV),Recreation
+GV,1199,1201.499,Recreation & Sports (GV),Recreation
+GV,1469.15,1469.62,Recreation & Sports (GV),Recreation
+GV,1580,1799.4,Dance (GV),Arts & Architecture
+H,1,99,Social Sciences--General (H),Social Sciences
+HA,1,28.999,Statistics (HA),Social Sciences
+HA,29,32,Statistics (HA),Social Sciences
+HA,473.001,4737,Statistics (HA),Social Sciences
+HB,1,70.999,Economics (HB-HC),Business & Economics
+HB,71,74,Economics (HB-HC),Business & Economics
+HB,75,130,Economics (HB-HC),Business & Economics
+HB,131,134.999,Economics (HB-HC),Business & Economics
+HB,135,147,Economics (HB-HC),Business & Economics
+HB,147.001,200.999,Economics (HB-HC),Business & Economics
+HB,522,534.999,Economics (HB-HC),Business & Economics
+HB,615,715,Economics (HB-HC),Business & Economics
+HB,801,843,Economics (HB-HC),Business & Economics
+HB,846,846.8,Economics (HB-HC),Business & Economics
+HB,848,3697,Economics (HB-HC),Business & Economics
+HB,3711,3840,Economics (HB-HC),Business & Economics
+HC,10,78.999,Economics (HB-HC),Business & Economics
+HC,79,79,Economics (HB-HC),Business & Economics
+HC,79.001,91.999,Economics (HB-HC),Business & Economics
+HC,94,1085,Economics (HB-HC),Business & Economics
+HD,1,27.999,"Business (HD-HG, TX)",Business & Economics
+HD,28,38.999,"Business (HD-HG, TX)",Business & Economics
+HD,39,40.7,"Business (HD-HG, TX)",Business & Economics
+HD,41,41,"Business (HD-HG, TX)",Business & Economics
+HD,41.001,44.999,"Business (HD-HG, TX)",Business & Economics
+HD,45,45.2,"Business (HD-HG, TX)",Business & Economics
+HD,47,47.4,"Business (HD-HG, TX)",Business & Economics
+HD,49,49.5,"Business (HD-HG, TX)",Business & Economics
+HD,50.501,55.999,"Business (HD-HG, TX)",Business & Economics
+HD,56,57.5,"Business (HD-HG, TX)",Business & Economics
+HD,57.501,57.999,"Business (HD-HG, TX)",Business & Economics
+HD,58.7,58.95,"Business (HD-HG, TX)",Business & Economics
+HD,59,59.6,"Business (HD-HG, TX)",Business & Economics
+HD,60,60.5,"Business (HD-HG, TX)",Business & Economics
+HD,61,61,"Business (HD-HG, TX)",Business & Economics
+HD,62.001,62.199,"Business (HD-HG, TX)",Business & Economics
+HD,62.2,62.8,"Business (HD-HG, TX)",Business & Economics
+HD,66,66.2,"Business (HD-HG, TX)",Business & Economics
+HD,69,69,"Business (HD-HG, TX)",Business & Economics
+HD,69.001,70,"Business (HD-HG, TX)",Business & Economics
+HD,72,88,"Business (HD-HG, TX)",Business & Economics
+HD,101,1285.999,"Business (HD-HG, TX)",Business & Economics
+HD,1361,1395.5,"Business (HD-HG, TX)",Business & Economics
+HD,1401,1427.999,"Business (HD-HG, TX)",Business & Economics
+HD,1501,1542,"Business (HD-HG, TX)",Business & Economics
+HD,1635,1702,"Business (HD-HG, TX)",Business & Economics
+HD,1741.001,2210,"Business (HD-HG, TX)",Business & Economics
+HD,2321,2328.999,"Business (HD-HG, TX)",Business & Economics
+HD,2340.8,2346.5,"Business (HD-HG, TX)",Business & Economics
+HD,2709,2930.7,"Business (HD-HG, TX)",Business & Economics
+HD,2951,3575,"Business (HD-HG, TX)",Business & Economics
+HD,3611,4730.9,"Business (HD-HG, TX)",Business & Economics
+HD,4801,4860.999,"Business (HD-HG, TX)",Business & Economics
+HD,4895.001,4908.999,"Business (HD-HG, TX)",Business & Economics
+HD,5481,5630.7,"Business (HD-HG, TX)",Business & Economics
+HD,5650,5660,"Business (HD-HG, TX)",Business & Economics
+HD,5701,6000.9,"Business (HD-HG, TX)",Business & Economics
+HD,6050,6305,"Business (HD-HG, TX)",Business & Economics
+HD,6305.001,6349.999,"Business (HD-HG, TX)",Business & Economics
+HD,6350,6940.7,"Business (HD-HG, TX)",Business & Economics
+HD,6951,6957,"Business (HD-HG, TX)",Business & Economics
+HD,6958.5,6976,"Business (HD-HG, TX)",Business & Economics
+HD,7088,7252,"Business (HD-HG, TX)",Business & Economics
+HD,7255,7256,"Business (HD-HG, TX)",Business & Economics
+HD,7260,7780.8,"Business (HD-HG, TX)",Business & Economics
+HD,8045,8943,"Business (HD-HG, TX)",Business & Economics
+HD,9000,9495,"Business (HD-HG, TX)",Business & Economics
+HD,9502,9502.5,"Business (HD-HG, TX)",Business & Economics
+HD,9506,9624,"Business (HD-HG, TX)",Business & Economics
+HD,9650,9663,"Business (HD-HG, TX)",Business & Economics
+HD,9665,9675,"Business (HD-HG, TX)",Business & Economics
+HD,9680,9714,"Business (HD-HG, TX)",Business & Economics
+HD,9715,9717.5,"Business (HD-HG, TX)",Business & Economics
+HD,9717.501,9719.999,"Business (HD-HG, TX)",Business & Economics
+HD,9720,9975,"Business (HD-HG, TX)",Business & Economics
+HD,9975.001,9998.999,"Business (HD-HG, TX)",Business & Economics
+HD,9999,9999,"Business (HD-HG, TX)",Business & Economics
+HE,1,198.999,"Business (HD-HG, TX)",Business & Economics
+HE,199.901,304.999,"Business (HD-HG, TX)",Business & Economics
+HE,305,311,"Business (HD-HG, TX)",Business & Economics
+HE,331,368.999,"Business (HD-HG, TX)",Business & Economics
+HE,561,729.999,"Business (HD-HG, TX)",Business & Economics
+HE,5601,5725,"Business (HD-HG, TX)",Business & Economics
+HE,7601,8659.999,"Business (HD-HG, TX)",Business & Economics
+HE,8689,8700.9,"Business (HD-HG, TX)",Business & Economics
+HE,9761,9900,"Business (HD-HG, TX)",Business & Economics
+HF,1,293.999,"Business (HD-HG, TX)",Business & Economics
+HF,343.001,1013.999,"Business (HD-HG, TX)",Business & Economics
+HF,1021,1027,"Business (HD-HG, TX)",Business & Economics
+HF,1040,1054,"Business (HD-HG, TX)",Business & Economics
+HF,1054.001,1700.999,"Business (HD-HG, TX)",Business & Economics
+HF,3000,4055,"Business (HD-HG, TX)",Business & Economics
+HF,5001,5380.999,"Business (HD-HG, TX)",Business & Economics
+HF,5381,5386,"Business (HD-HG, TX)",Business & Economics
+HF,5387,5387.5,"Business (HD-HG, TX)",Business & Economics
+HF,5410,5417.5,"Business (HD-HG, TX)",Business & Economics
+HF,5428,5429.6,"Business (HD-HG, TX)",Business & Economics
+HF,5437,5444,"Business (HD-HG, TX)",Business & Economics
+HF,5469.7,5481,"Business (HD-HG, TX)",Business & Economics
+HF,5546,5548.6,"Business (HD-HG, TX)",Business & Economics
+HF,5548.7,5548.85,"Business (HD-HG, TX)",Business & Economics
+HF,5549,5549.5,"Business (HD-HG, TX)",Business & Economics
+HF,5549.501,5600.999,"Business (HD-HG, TX)",Business & Economics
+HF,5601,5689,"Business (HD-HG, TX)",Business & Economics
+HF,5691,5716,"Business (HD-HG, TX)",Business & Economics
+HF,5717,5734.7,"Business (HD-HG, TX)",Business & Economics
+HF,5735,5746,"Business (HD-HG, TX)",Business & Economics
+HF,5801,6182,"Business (HD-HG, TX)",Business & Economics
+HG,1,177.999,"Business (HD-HG, TX)",Business & Economics
+HG,179.001,200.999,"Business (HD-HG, TX)",Business & Economics
+HG,201,257.999,"Business (HD-HG, TX)",Business & Economics
+HG,1501,1620.999,"Business (HD-HG, TX)",Business & Economics
+HG,1811,2351,"Business (HD-HG, TX)",Business & Economics
+HG,2397,3550,"Business (HD-HG, TX)",Business & Economics
+HG,3810,4000,"Business (HD-HG, TX)",Business & Economics
+HG,4001,4285,"Business (HD-HG, TX)",Business & Economics
+HG,4501,4529.999,"Business (HD-HG, TX)",Business & Economics
+HG,4900,5993,"Business (HD-HG, TX)",Business & Economics
+HG,6001,6051,"Business (HD-HG, TX)",Business & Economics
+HG,8011,8053.499,"Business (HD-HG, TX)",Business & Economics
+HG,8054.451,8058.999,"Business (HD-HG, TX)",Business & Economics
+HG,8751,8778.999,"Business (HD-HG, TX)",Business & Economics
+HG,8779,8793,"Business (HD-HG, TX)",Business & Economics
+HJ,99.801,209.999,"Political Science (HJ, HX, J-JC, JV)",Political Science
+HJ,241,1620,"Political Science (HJ, HX, J-JC, JV)",Political Science
+HJ,2005,2216,"Political Science (HJ, HX, J-JC, JV)",Political Science
+HJ,2240,2320.999,"Political Science (HJ, HX, J-JC, JV)",Political Science
+HJ,9103,9695,"Political Science (HJ, HX, J-JC, JV)",Political Science
+HM,1,299,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HM,299.001,434.999,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HM,435,460.999,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HM,473.001,477,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HM,481,554,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HM,554.001,620.999,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HM,621,656,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HM,661,696,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HM,711,755.999,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HM,786,806,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HM,811,821,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HM,831,901,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HM,1001,1040.999,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HM,1106,1171,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HM,1176,1281,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HN,1,29.999,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HN,50,995,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HQ,12,18.999,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HQ,19,30.7,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HQ,31,64,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HQ,71,72,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HQ,74,74.2,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HQ,75,76.8,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HQ,77.7,77.95,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HQ,79.001,100.999,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HQ,101,440.7,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HQ,503,749.999,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HQ,750,755.5,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HQ,755.7,759.92,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HQ,760,767.7,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HQ,767.8,792.2,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HQ,793,799.2,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HQ,799.5,799.9,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HQ,799.95,799.97,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HQ,806.001,810.999,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HQ,1060,1064,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HQ,1075,1075.5,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HQ,1088,1090.7,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HQ,1101,1870.999,Women's Studies (HQ),Sociology
+HT,101,160.999,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HT,165.5,169.9,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HT,231.001,250.999,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HT,321,325,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HT,361,384,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HT,388,388,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HT,390,395,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HT,401,485,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HT,485.001,600.999,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HT,601,620.999,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HT,675,690,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HT,851,1445,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HT,1501,1595,"Sociology & Social History (HM-HN, HQ, HS-HT)",Sociology
+HV,1,39.999,Social Welfare & Social Work (HV),Social Sciences
+HV,40,69,Social Welfare & Social Work (HV),Social Sciences
+HV,85,525,Social Welfare & Social Work (HV),Social Sciences
+HV,551.2,552.999,Social Welfare & Social Work (HV),Social Sciences
+HV,553,559.999,Social Welfare & Social Work (HV),Social Sciences
+HV,560,583,Social Welfare & Social Work (HV),Social Sciences
+HV,640,645,Social Welfare & Social Work (HV),Social Sciences
+HV,675,677,Social Welfare & Social Work (HV),Social Sciences
+HV,680,696,Social Welfare & Social Work (HV),Social Sciences
+HV,697,700.7,Social Welfare & Social Work (HV),Social Sciences
+HV,701,834.999,Social Welfare & Social Work (HV),Social Sciences
+HV,873,887,Social Welfare & Social Work (HV),Social Sciences
+HV,888,907,Social Welfare & Social Work (HV),Social Sciences
+HV,1442,1448,Social Welfare & Social Work (HV),Social Sciences
+HV,1449,1449,Social Welfare & Social Work (HV),Social Sciences
+HV,1450,1494,Social Welfare & Social Work (HV),Social Sciences
+HV,1551,3024,Social Welfare & Social Work (HV),Social Sciences
+HV,3176,3199,Social Welfare & Social Work (HV),Social Sciences
+HV,4005,4013,Social Welfare & Social Work (HV),Social Sciences
+HV,4995.001,5000.999,Social Welfare & Social Work (HV),Social Sciences
+HV,5001,5720.5,Social Welfare & Social Work (HV),Social Sciences
+HV,5725,5770,Social Welfare & Social Work (HV),Social Sciences
+HV,5800,5840,Social Welfare & Social Work (HV),Social Sciences
+HV,6001,6034.999,Social Welfare & Social Work (HV),Social Sciences
+HV,6035,6197,Social Welfare & Social Work (HV),Social Sciences
+HV,6201,6249,Social Welfare & Social Work (HV),Social Sciences
+HV,6250,6250.4,Social Welfare & Social Work (HV),Social Sciences
+HV,6251,6773.55,Social Welfare & Social Work (HV),Social Sciences
+HV,6774,7220.5,Social Welfare & Social Work (HV),Social Sciences
+HV,7231,7427.999,Social Welfare & Social Work (HV),Social Sciences
+HV,7431,7431,Social Welfare & Social Work (HV),Social Sciences
+HV,7551,7934.999,Social Welfare & Social Work (HV),Social Sciences
+HV,7935,8025,Social Welfare & Social Work (HV),Social Sciences
+HV,8073,8079.199,Social Welfare & Social Work (HV),Social Sciences
+HV,8290,8291,Social Welfare & Social Work (HV),Social Sciences
+HV,8301,9050.999,Social Welfare & Social Work (HV),Social Sciences
+HV,9051,9230.7,Social Welfare & Social Work (HV),Social Sciences
+HV,9261,9430.7,Social Welfare & Social Work (HV),Social Sciences
+HV,9950,9960,Social Welfare & Social Work (HV),Social Sciences
+HX,519,550,"Political Science (HJ, HX, J-JC, JV)",Political Science
+HX,806,811,"Political Science (HJ, HX, J-JC, JV)",Political Science
+J,100,981,"Political Science (HJ, HX, J-JC, JV)",Political Science
+JA,1,26,"Political Science (HJ, HX, J-JC, JV)",Political Science
+JA,27,34,"Political Science (HJ, HX, J-JC, JV)",Political Science
+JA,71,80,"Political Science (HJ, HX, J-JC, JV)",Political Science
+JA,81,84,"Political Science (HJ, HX, J-JC, JV)",Political Science
+JA,86,88,"Political Science (HJ, HX, J-JC, JV)",Political Science
+JC,178.001,273,"Political Science (HJ, HX, J-JC, JV)",Political Science
+JC,311,314,"Political Science (HJ, HX, J-JC, JV)",Political Science
+JC,319,323,"Political Science (HJ, HX, J-JC, JV)",Political Science
+JC,348,497,"Political Science (HJ, HX, J-JC, JV)",Political Science
+JC,571,605,"Political Science (HJ, HX, J-JC, JV)",Political Science
+JF,56.001,224.999,Government (JF-JS),Political Science
+JF,491,619,Government (JF-JS),Political Science
+JF,799,1177,Government (JF-JS),Political Science
+JF,1338,1500.999,Government (JF-JS),Political Science
+JF,1521.001,2010.999,Government (JF-JS),Political Science
+JF,2011,2112,Government (JF-JS),Political Science
+JK,404,500.999,Government (JF-JS),Political Science
+JK,501,630.999,Government (JF-JS),Political Science
+JK,631,868,Government (JF-JS),Political Science
+JK,1012,1153.999,Government (JF-JS),Political Science
+JK,2403,9593,Government (JF-JS),Political Science
+JL,839.001,1199.999,Government (JF-JS),Political Science
+JL,1200,1299,Government (JF-JS),Political Science
+JL,1850,3899,Government (JF-JS),Political Science
+JN,1,97,Government (JF-JS),Political Science
+JN,101,1186.999,Government (JF-JS),Political Science
+JN,1187,1371,Government (JF-JS),Political Science
+JN,1395,1571.5,Government (JF-JS),Political Science
+JN,2301,3007,Government (JF-JS),Political Science
+JN,3201,4944,Government (JF-JS),Political Science
+JN,6769.001,7010.999,Government (JF-JS),Political Science
+JQ,21,199.999,Government (JF-JS),Political Science
+JQ,200,620,Government (JF-JS),Political Science
+JQ,620.001,1069.999,Government (JF-JS),Political Science
+JQ,3995,6651,Government (JF-JS),Political Science
+JS,39,54.999,Government (JF-JS),Political Science
+JV,500,5397,"Political Science (HJ, HX, J-JC, JV)",Political Science
+JV,6001,6006,"Political Science (HJ, HX, J-JC, JV)",Political Science
+JV,7590,8339.7,"Political Science (HJ, HX, J-JC, JV)",Political Science
+JV,8490,8758,"Political Science (HJ, HX, J-JC, JV)",Political Science
+JX,1,62.999,Law (K),Law
+JX,220,1195,Law (K),Law
+JX,1195.001,1260.999,Law (K),Law
+JX,1283.001,1304.999,Law (K),Law
+JX,1901,1995,Law (K),Law
+JX,2001,6650,Law (K),Law
+JZ,5.5,18,International Relations (JZ),Political Science
+JZ,1153.001,1248.999,International Relations (JZ),Political Science
+JZ,1305,1329.499,International Relations (JZ),Political Science
+JZ,5511.2,5513.999,International Relations (JZ),Political Science
+JZ,5532.001,5586.999,International Relations (JZ),Political Science
+JZ,5587,6009,International Relations (JZ),Political Science
+JZ,6010,6060,International Relations (JZ),Political Science
+JZ,6360,6377,International Relations (JZ),Political Science
+K,1,36.5,Law (K),Law
+K,100,103,Law (K),Law
+K,115,130,Law (K),Law
+K,202,202,Law (K),Law
+K,212,213,Law (K),Law
+K,218.001,235.999,Law (K),Law
+K,237,264,Law (K),Law
+K,366,380,Law (K),Law
+K,486,487,Law (K),Law
+K,546.001,577.999,Law (K),Law
+K,1066,1089,Law (K),Law
+K,1301,1366,Law (K),Law
+K,3171,3179,Law (K),Law
+K,3224,3278,Law (K),Law
+K,3581,3598,Law (K),Law
+K,3820,3836,Law (K),Law
+K,5015.4,5350,Law (K),Law
+KB,7,67.999,Law (K),Law
+KD,51,8849.999,Law (K),Law
+KE,1,9450,Law (K),Law
+KF,1,9827,Law (K),Law
+KHH,1,9900,Law (K),Law
+KJE,5,7975,Law (K),Law
+KKT,1,4999,Law (K),Law
+KM,1,999,Law (K),Law
+KNC,1,999,Law (K),Law
+KNQ,1,9665,Law (K),Law
+KQC,1,999,Law (K),Law
+KZ,5.501,23.999,Law (K),Law
+KZ,6440,6530,Law (K),Law
+L,7,97,Education (L),Education
+L,101,101,Education (L),Education
+L,111,791,Education (L),Education
+LA,5,25,Education (L),Education
+LA,31,135,Education (L),Education
+LA,201,398,Education (L),Education
+LA,410,2284,Education (L),Education
+LB,5,45,Education (L),Education
+LB,1025,1049.899,Education (L),Education
+LB,1049.9,1050.75,Education (L),Education
+LB,1050.9,1091,Education (L),Education
+LB,1101,1139,Education (L),Education
+LB,1139.2,1139.5,Education (L),Education
+LB,1140,1140.5,Education (L),Education
+LB,1555,1602,Education (L),Education
+LB,1603,1696.6,Education (L),Education
+LB,1705,1770.999,Education (L),Education
+LB,1775,1785,Education (L),Education
+LB,2300,2326.399,Education (L),Education
+LB,2326.4,2330,Education (L),Education
+LB,2330.001,2331.699,Education (L),Education
+LB,2341,2341.95,Education (L),Education
+LB,2341.951,2350.999,Education (L),Education
+LB,2367.751,2370.999,Education (L),Education
+LB,2391.001,2430,Education (L),Education
+LB,2799,2799.3,Education (L),Education
+LB,2801,2831.599,Education (L),Education
+LB,2832,2844.1,Education (L),Education
+LB,2844.631,3010.999,Education (L),Education
+LB,3011,3044.999,Education (L),Education
+LB,3050,3060.87,Education (L),Education
+LB,3060.871,3095,Education (L),Education
+LB,3401,3495,Education (L),Education
+LC,65,67.68,Education (L),Education
+LC,71,71.999,Education (L),Education
+LC,72.501,106.999,Education (L),Education
+LC,142,148.5,Education (L),Education
+LC,149,161,Education (L),Education
+LC,165,182,Education (L),Education
+LC,189,211.999,Education (L),Education
+LC,212,212.863,Education (L),Education
+LC,251,318,Education (L),Education
+LC,361,445.999,Education (L),Education
+LC,461,510,Education (L),Education
+LC,1001,1021.999,Education (L),Education
+LC,1037,1037.8,Education (L),Education
+LC,1037.801,1040.999,Education (L),Education
+LC,1041,1048,Education (L),Education
+LC,1081,1087.4,Education (L),Education
+LC,1090,1091,Education (L),Education
+LC,1099,1099.5,Education (L),Education
+LC,2667,2679.999,Education (L),Education
+LC,3701,3740,Education (L),Education
+LC,3950,3990.999,Education (L),Education
+LC,3991,4000,Education (L),Education
+LC,4001,4806.5,Education (L),Education
+LC,4812,5160.3,Education (L),Education
+LC,5201,5450.999,Education (L),Education
+LC,5800,5808,Education (L),Education
+LJ,3,165,Education (L),Education
+ML,25,28,Music (M),Music
+ML,32,33,Music (M),Music
+ML,55,89,Music (M),Music
+ML,162,197,Music (M),Music
+ML,198,360.6,Music (M),Music
+ML,385,429,Music (M),Music
+ML,459,1380,Music (M),Music
+ML,1400,3275,Music (M),Music
+ML,3469,3541,Music (M),Music
+ML,3544,3776,Music (M),Music
+ML,3797,3799.5,Music (M),Music
+ML,3919,3920,Music (M),Music
+MT,87,87,Music (M),Music
+MT,90,146,Music (M),Music
+N,1,58,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+N,61,72,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+N,81,390,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+N,400,3990,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+N,3990.001,4389.999,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+N,5300,7418,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+N,7420,7525.8,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+N,8554,8585,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+N,8700,9165,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+NA,100,130,Architecture (NA),Arts & Architecture
+NA,190,1555.5,Architecture (NA),Arts & Architecture
+NA,2000,2320,Architecture (NA),Arts & Architecture
+NA,2500,2599,Architecture (NA),Arts & Architecture
+NA,2695,2793,Architecture (NA),Arts & Architecture
+NA,7100,7884,Architecture (NA),Arts & Architecture
+NA,9000,9428,Architecture (NA),Arts & Architecture
+NC,997,1003,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+ND,2889,3416,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+NK,806.001,1134.999,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+NK,1160,1174,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+NK,1174.001,1504.999,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+NK,1175,1498,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+NK,1498.001,3599.999,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+NK,1505,1535,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+NK,1700,2138,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+NK,3600,9990,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+NK,3700,4695,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+NK,5100,5440,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+NK,6400,8459,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+NK,8800,9505.5,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+NX,1,260,Fine Arts (NX),Arts & Architecture
+NX,280,410,Fine Arts (NX),Arts & Architecture
+NX,440,632,Fine Arts (NX),Arts & Architecture
+P,1,85,Linguistics (P),Language & Literature
+P,87,94.699,Linguistics (P),Language & Literature
+P,95,95.6,Communication & Mass Media (P),Language & Literature
+P,95.601,96,Communication & Mass Media (P),Language & Literature
+P,98,98.5,Linguistics (P),Language & Literature
+P,99,99.4,Linguistics (P),Language & Literature
+P,101,117.999,Linguistics (P),Language & Literature
+P,118,118.75,Linguistics (P),Language & Literature
+P,118.751,120.999,Linguistics (P),Language & Literature
+P,121,149,Linguistics (P),Language & Literature
+P,149.001,200.999,Linguistics (P),Language & Literature
+P,201,299,Linguistics (P),Language & Literature
+P,301,301.5,Linguistics (P),Language & Literature
+P,302,302.87,Linguistics (P),Language & Literature
+P,306,310,Linguistics (P),Language & Literature
+P,321,324.5,Linguistics (P),Language & Literature
+P,325,325.5,Linguistics (P),Language & Literature
+P,326,326.5,Linguistics (P),Language & Literature
+P,327,327.5,Linguistics (P),Language & Literature
+P,327.501,374.999,Linguistics (P),Language & Literature
+P,375,381,Linguistics (P),Language & Literature
+P,501,769,Linguistics (P),Language & Literature
+PA,1,199,Languages & Literatures (PA-PZ),Language & Literature
+PA,1000,1179,Languages & Literatures (PA-PZ),Language & Literature
+PA,2001,2915,Languages & Literatures (PA-PZ),Language & Literature
+PA,3000,3049,Languages & Literatures (PA-PZ),Language & Literature
+PA,3300,3516,Languages & Literatures (PA-PZ),Language & Literature
+PA,5000,5300.999,Languages & Literatures (PA-PZ),Language & Literature
+PB,1,431,Languages & Literatures (PA-PZ),Language & Literature
+PB,1201,1449,Languages & Literatures (PA-PZ),Language & Literature
+PC,1,400,Languages & Literatures (PA-PZ),Language & Literature
+PC,400.001,600.999,Languages & Literatures (PA-PZ),Language & Literature
+PC,1001,1977,Languages & Literatures (PA-PZ),Language & Literature
+PC,2001,2699.999,Languages & Literatures (PA-PZ),Language & Literature
+PC,3801,3976,Languages & Literatures (PA-PZ),Language & Literature
+PC,4001,4977,Languages & Literatures (PA-PZ),Language & Literature
+PC,5001,5498,Languages & Literatures (PA-PZ),Language & Literature
+PD,1501,2200.999,Languages & Literatures (PA-PZ),Language & Literature
+PD,2201,2393,Languages & Literatures (PA-PZ),Language & Literature
+PD,3001,3929,Languages & Literatures (PA-PZ),Language & Literature
+PE,1001,1693,Languages & Literatures (PA-PZ),Language & Literature
+PE,1700,3602,Languages & Literatures (PA-PZ),Language & Literature
+PF,3001,3800.999,Languages & Literatures (PA-PZ),Language & Literature
+PF,5000,5951,Languages & Literatures (PA-PZ),Language & Literature
+PG,1,499,Languages & Literatures (PA-PZ),Language & Literature
+PG,601,716,Languages & Literatures (PA-PZ),Language & Literature
+PG,801,1146,Languages & Literatures (PA-PZ),Language & Literature
+PG,1201,1749,Languages & Literatures (PA-PZ),Language & Literature
+PG,2001,2826,Languages & Literatures (PA-PZ),Language & Literature
+PG,2900,2998,Languages & Literatures (PA-PZ),Language & Literature
+PG,4001,5146,Languages & Literatures (PA-PZ),Language & Literature
+PG,5201,5546,Languages & Literatures (PA-PZ),Language & Literature
+PG,6001,7446,Languages & Literatures (PA-PZ),Language & Literature
+PH,601,671,Languages & Literatures (PA-PZ),Language & Literature
+PJ,1,195,Languages & Literatures (PA-PZ),Language & Literature
+PJ,1001,1090.999,Languages & Literatures (PA-PZ),Language & Literature
+PJ,3001,3097,Languages & Literatures (PA-PZ),Language & Literature
+PJ,3101,3230.999,Languages & Literatures (PA-PZ),Language & Literature
+PJ,5001,5049.999,Languages & Literatures (PA-PZ),Language & Literature
+PJ,6001,6072.999,Languages & Literatures (PA-PZ),Language & Literature
+PJ,7501,7695.799,Languages & Literatures (PA-PZ),Language & Literature
+PL,1001,1960,Languages & Literatures (PA-PZ),Language & Literature
+PL,2250,2443,Languages & Literatures (PA-PZ),Language & Literature
+PL,2661,2979,Languages & Literatures (PA-PZ),Language & Literature
+PL,3551,3560.999,Languages & Literatures (PA-PZ),Language & Literature
+PL,5001,5050.999,Languages & Literatures (PA-PZ),Language & Literature
+PL,8000,8009,Languages & Literatures (PA-PZ),Language & Literature
+PL,8009.5,8014,Languages & Literatures (PA-PZ),Language & Literature
+PL,8035,8844,Languages & Literatures (PA-PZ),Language & Literature
+PM,101,230.999,Languages & Literatures (PA-PZ),Language & Literature
+PM,7831,7875,Languages & Literatures (PA-PZ),Language & Literature
+PN,45,57,Languages & Literatures (PA-PZ),Language & Literature
+PN,80,99,Languages & Literatures (PA-PZ),Language & Literature
+PN,101,171.999,Languages & Literatures (PA-PZ),Language & Literature
+PN,172,239,Languages & Literatures (PA-PZ),Language & Literature
+PN,241,241.5,Languages & Literatures (PA-PZ),Language & Literature
+PN,451,497,Languages & Literatures (PA-PZ),Language & Literature
+PN,597,605,Languages & Literatures (PA-PZ),Language & Literature
+PN,661,682.999,Languages & Literatures (PA-PZ),Language & Literature
+PN,683,687,Languages & Literatures (PA-PZ),Language & Literature
+PN,749.001,779,Languages & Literatures (PA-PZ),Language & Literature
+PN,801,820,Languages & Literatures (PA-PZ),Language & Literature
+PN,842.001,850.999,Languages & Literatures (PA-PZ),Language & Literature
+PN,851,884,Languages & Literatures (PA-PZ),Language & Literature
+PN,1008.2,1009.5,Languages & Literatures (PA-PZ),Language & Literature
+PN,1010,1030.999,Languages & Literatures (PA-PZ),Language & Literature
+PN,1031,1049,Languages & Literatures (PA-PZ),Language & Literature
+PN,1560,1584.999,Languages & Literatures (PA-PZ),Language & Literature
+PN,1600,1634.999,Drama (PN),Language & Literature
+PN,1693.001,1719.999,Drama (PN),Language & Literature
+PN,1720,1861,Drama (PN),Language & Literature
+PN,1991,1991.9,Drama (PN),Language & Literature
+PN,1992,1992.92,Drama (PN),Language & Literature
+PN,1993,1996.999,Drama (PN),Language & Literature
+PN,2000,2060.999,Drama (PN),Language & Literature
+PN,2061,2071,Drama (PN),Language & Literature
+PN,2091.001,2130.999,Drama (PN),Language & Literature
+PN,2219.3,3030,Drama (PN),Language & Literature
+PN,3151,3171,Drama (PN),Language & Literature
+PN,3311,3328.999,Drama (PN),Language & Literature
+PN,3355,3383,Languages & Literatures (PA-PZ),Language & Literature
+PN,3427,3448,Languages & Literatures (PA-PZ),Language & Literature
+PN,3451,3503,Languages & Literatures (PA-PZ),Language & Literature
+PN,4001,4070.999,Languages & Literatures (PA-PZ),Language & Literature
+PN,4071,4095,Languages & Literatures (PA-PZ),Language & Literature
+PN,4699,4734.999,Languages & Literatures (PA-PZ),Language & Literature
+PN,4748.001,4774.999,Journalism (PN),Language & Literature
+PN,4775,4784,Journalism (PN),Language & Literature
+PN,4840,5648,Journalism (PN),Language & Literature
+PN,6010,6065.999,Journalism (PN),Language & Literature
+PN,6069.001,6079.999,Languages & Literatures (PA-PZ),Language & Literature
+PN,6099,6110,Languages & Literatures (PA-PZ),Language & Literature
+PN,6110.5,6120,Languages & Literatures (PA-PZ),Language & Literature
+PN,6146.5,6156.999,Languages & Literatures (PA-PZ),Language & Literature
+PN,6700,6790,Languages & Literatures (PA-PZ),Language & Literature
+PQ,226,317,Languages & Literatures (PA-PZ),Language & Literature
+PQ,2600,2651,Languages & Literatures (PA-PZ),Language & Literature
+PQ,3800,3999,Languages & Literatures (PA-PZ),Language & Literature
+PQ,4001,4063,Languages & Literatures (PA-PZ),Language & Literature
+PQ,6001,6055.999,Languages & Literatures (PA-PZ),Language & Literature
+PQ,6061,6073,Languages & Literatures (PA-PZ),Language & Literature
+PQ,6098.7,6129,Languages & Literatures (PA-PZ),Language & Literature
+PQ,6131,6153,Languages & Literatures (PA-PZ),Language & Literature
+PQ,6271,6498,Languages & Literatures (PA-PZ),Language & Literature
+PQ,6500,6576,Languages & Literatures (PA-PZ),Language & Literature
+PQ,7081,8560,Languages & Literatures (PA-PZ),Language & Literature
+PQ,9000,9034,Languages & Literatures (PA-PZ),Language & Literature
+PQ,9500,9698.436,Languages & Literatures (PA-PZ),Language & Literature
+PR,1,56,Languages & Literatures (PA-PZ),Language & Literature
+PR,111,116,Languages & Literatures (PA-PZ),Language & Literature
+PR,251,369,Languages & Literatures (PA-PZ),Language & Literature
+PR,401,420.999,Languages & Literatures (PA-PZ),Language & Literature
+PR,441,449,Languages & Literatures (PA-PZ),Language & Literature
+PR,451,469,Languages & Literatures (PA-PZ),Language & Literature
+PR,500,520.999,Languages & Literatures (PA-PZ),Language & Literature
+PR,641,744,Languages & Literatures (PA-PZ),Language & Literature
+PR,750,766.999,Languages & Literatures (PA-PZ),Language & Literature
+PR,821,890,Languages & Literatures (PA-PZ),Language & Literature
+PR,1098,1109.999,Languages & Literatures (PA-PZ),Language & Literature
+PR,1119,1151,Languages & Literatures (PA-PZ),Language & Literature
+PR,1803,2165,Languages & Literatures (PA-PZ),Language & Literature
+PR,2199,3195,Languages & Literatures (PA-PZ),Language & Literature
+PR,3291,3785,Languages & Literatures (PA-PZ),Language & Literature
+PR,3991,5990,Languages & Literatures (PA-PZ),Language & Literature
+PR,6000,6049,Languages & Literatures (PA-PZ),Language & Literature
+PR,8309,9680,Languages & Literatures (PA-PZ),Language & Literature
+PS,147,152,Languages & Literatures (PA-PZ),Language & Literature
+PS,152.001,162.999,Languages & Literatures (PA-PZ),Language & Literature
+PS,201,217,Languages & Literatures (PA-PZ),Language & Literature
+PS,271,285,Languages & Literatures (PA-PZ),Language & Literature
+PS,301,326,Languages & Literatures (PA-PZ),Language & Literature
+PS,370,380,Languages & Literatures (PA-PZ),Language & Literature
+PS,430,439,Languages & Literatures (PA-PZ),Language & Literature
+PS,501,529.999,Languages & Literatures (PA-PZ),Language & Literature
+PS,551,559,Languages & Literatures (PA-PZ),Language & Literature
+PS,580,592.999,Languages & Literatures (PA-PZ),Language & Literature
+PS,651,659.2,Languages & Literatures (PA-PZ),Language & Literature
+PS,991,3390,Languages & Literatures (PA-PZ),Language & Literature
+PS,3500,3549,Languages & Literatures (PA-PZ),Language & Literature
+PS,3550,3576,Languages & Literatures (PA-PZ),Language & Literature
+PS,8001,8599,Languages & Literatures (PA-PZ),Language & Literature
+PT,83,174.999,Languages & Literatures (PA-PZ),Language & Literature
+PT,175,230,Languages & Literatures (PA-PZ),Language & Literature
+PT,1100,1141,Languages & Literatures (PA-PZ),Language & Literature
+PT,2044,2239,Languages & Literatures (PA-PZ),Language & Literature
+PT,3746.001,3971,Languages & Literatures (PA-PZ),Language & Literature
+PT,6500,6530,Languages & Literatures (PA-PZ),Language & Literature
+PT,7001,7087,Languages & Literatures (PA-PZ),Language & Literature
+PT,8851,8900,Languages & Literatures (PA-PZ),Language & Literature
+PZ,5,90,Languages & Literatures (PA-PZ),Language & Literature
+Q,1,295,Sciences--General (Q),General Science
+Q,300,349.999,Sciences--General (Q),General Science
+Q,350,390,Sciences--General (Q),General Science
+QA,1,43,Mathematics (QA),Math & Computer Science
+QA,71,76.749,Mathematics (QA),Math & Computer Science
+QA,76.75,76.765,Computer Science (QA),Math & Computer Science
+QA,76.766,76.95,Mathematics (QA),Math & Computer Science
+QA,150,272.5,Mathematics (QA),Math & Computer Science
+QA,273,280,Mathematics (QA),Math & Computer Science
+QA,280.001,299.599,Mathematics (QA),Math & Computer Science
+QA,299.6,433,Mathematics (QA),Math & Computer Science
+QA,440,699,Mathematics (QA),Math & Computer Science
+QA,801,939,Mathematics (QA),Math & Computer Science
+QB,1,139,Astronomy (QB),Astronomy
+QB,275,343,Astronomy (QB),Astronomy
+QB,349,421,Astronomy (QB),Astronomy
+QB,460,466,Astronomy (QB),Astronomy
+QB,495,500.499,Astronomy (QB),Astronomy
+QB,500.5,785,Astronomy (QB),Astronomy
+QC,1,75,Physics (QC),Physics
+QC,81,114,Physics (QC),Physics
+QC,120,168.85,Physics (QC),Physics
+QC,170,197,Physics (QC),Physics
+QC,197.001,220.999,Physics (QC),Physics
+QC,221,246,Physics (QC),Physics
+QC,251,310.149,Physics (QC),Physics
+QC,310.15,319,Physics (QC),Physics
+QC,319.001,338.5,Physics (QC),Physics
+QC,350,449.999,Physics (QC),Physics
+QC,450,467,Physics (QC),Physics
+QC,474,496.9,Physics (QC),Physics
+QC,501,668.999,Physics (QC),Physics
+QC,678.601,700.999,Physics (QC),Physics
+QC,717.6,718.8,Physics (QC),Physics
+QC,718.801,721,Physics (QC),Physics
+QC,750,766,Physics (QC),Physics
+QC,770,792.999,Physics (QC),Physics
+QC,793,793.5,Physics (QC),Physics
+QC,794.95,798,Physics (QC),Physics
+QC,801,809,Physics (QC),Physics
+QC,811,849,Physics (QC),Physics
+QC,851,974.499,Meteorology & Climatology (QC),Physics
+QC,980,994.949,Meteorology & Climatology (QC),Physics
+QC,994.95,999,Meteorology & Climatology (QC),Physics
+QD,1,65,Chemistry (QD),Chemistry
+QD,71,142,Chemistry (QD),Chemistry
+QD,146,197,Chemistry (QD),Chemistry
+QD,241,414.999,Chemistry (QD),Chemistry
+QD,415,436,Chemistry (QD),Chemistry
+QD,450,624.999,Chemistry (QD),Chemistry
+QD,701,731,Chemistry (QD),Chemistry
+QD,731.001,801,Chemistry (QD),Chemistry
+QD,901,999,Materials Science (QD),Chemistry
+QE,1,350.62,Geology (QE),Geology
+QE,351,399.2,Geology (QE),Geology
+QE,420,499,Geology (QE),Geology
+QE,500,520.999,Geology (QE),Geology
+QE,521,545,Geology (QE),Geology
+QE,545.001,600.999,Geology (QE),Geology
+QE,601,613.5,Geology (QE),Geology
+QE,640,699,Geology (QE),Geology
+QE,701,760,Geology (QE),Geology
+QE,760.8,899.2,Geology (QE),Geology
+QE,901,996.5,Geology (QE),Geology
+QH,1,199.5,Natural History (QH),Biology
+QH,201,278.5,Natural History (QH),Biology
+QH,301,358.999,Natural History (QH),Biology
+QH,359,425,Biology (QH),Biology
+QH,426,470,Biology (QH),Biology
+QH,489.001,500.999,Biology (QH),Biology
+QH,501,531,Biology (QH),Biology
+QH,540,549.5,Ecology (QH),Biology
+QH,573,671,Biology (QH),Biology
+QH,671.001,704.999,Biology (QH),Biology
+QH,705,705.5,Biology (QH),Biology
+QK,1,474.5,Botany (QK),Botany
+QK,474.8,493.999,Botany (QK),Botany
+QK,504,638,Botany (QK),Botany
+QK,640,707,Botany (QK),Botany
+QK,710,899,Botany (QK),Botany
+QK,900,989,Botany (QK),Botany
+QL,1,355,Zoology (QL),Zoology
+QL,360,460.999,Zoology (QL),Zoology
+QL,461,599.82,Zoology (QL),Zoology
+QL,605,613.999,Zoology (QL),Zoology
+QL,614,639.8,Zoology (QL),Zoology
+QL,640,669.3,Zoology (QL),Zoology
+QL,671,699,Zoology (QL),Zoology
+QL,700,739.8,Zoology (QL),Zoology
+QL,750,790.999,Zoology (QL),Zoology
+QL,799,799.5,Zoology (QL),Zoology
+QL,801,950.9,Zoology (QL),Zoology
+QL,951,991,Zoology (QL),Zoology
+QM,1,511,Anatomy (QM),Health Sciences
+QM,531,549,Anatomy (QM),Health Sciences
+QM,550,577.8,Anatomy (QM),Health Sciences
+QM,601,695,Anatomy (QM),Health Sciences
+QP,1,345,Physiology (QP),Health Sciences
+QP,351,495,Physiology (QP),Health Sciences
+QP,501,801,Animal Biochemistry (QP),Health Sciences
+QP,901,981,"Pharmacy, Therapeutics, & Pharmacology (QP, RM, RS)",Health Sciences
+QR,1,74.5,Microbiology & Immunology (QR),Health Sciences
+QR,75,99.5,Microbiology & Immunology (QR),Health Sciences
+QR,100,130,Microbiology & Immunology (QR),Health Sciences
+QR,130.001,170.999,Microbiology & Immunology (QR),Health Sciences
+QR,171,171,Microbiology & Immunology (QR),Health Sciences
+QR,171.001,179.999,Microbiology & Immunology (QR),Health Sciences
+QR,180,189.5,Microbiology & Immunology (QR),Health Sciences
+QR,189.501,354.999,Microbiology & Immunology (QR),Health Sciences
+QR,355,502,Microbiology & Immunology (QR),Health Sciences
+R,5,130.5,Medicine--General (R),Health Sciences
+R,131,687,Medicine--General (R),Health Sciences
+R,702,703,Medicine--General (R),Health Sciences
+R,723,726,Medicine--General (R),Health Sciences
+R,726.5,726.8,Medicine--General (R),Health Sciences
+R,727,727.5,Medicine--General (R),Health Sciences
+R,728,733,Medicine--General (R),Health Sciences
+R,735,854,Medicine--General (R),Health Sciences
+R,855,855.5,Medicine--General (R),Health Sciences
+R,856,857,"Biomedical Engineering (R, TP)",Engineering
+R,858,859.7,Medicine--General (R),Health Sciences
+R,895,920,Medicine--General (R),Health Sciences
+RA,1,395.999,Public Health (RA),Health Sciences
+RA,399,399,Public Health (RA),Health Sciences
+RA,399.001,404.999,Public Health (RA),Health Sciences
+RA,407,409.5,Public Health (RA),Health Sciences
+RA,410,410.9,Public Health (RA),Health Sciences
+RA,411,415,Public Health (RA),Health Sciences
+RA,418,418.5,Public Health (RA),Health Sciences
+RA,421,427.999,Public Health (RA),Health Sciences
+RA,440,440.87,Public Health (RA),Health Sciences
+RA,440.871,564.999,Public Health (RA),Health Sciences
+RA,565,600,Public Health (RA),Health Sciences
+RA,601,602,Public Health (RA),Food Science
+RA,639,642,Public Health (RA),Health Sciences
+RA,643,645,Public Health (RA),Health Sciences
+RA,645.3,645.37,Public Health (RA),Health Sciences
+RA,645.5,645.9,Public Health (RA),Health Sciences
+RA,648.5,767,Public Health (RA),Health Sciences
+RA,771,771.7,Public Health (RA),Health Sciences
+RA,771.701,772.999,Public Health (RA),Health Sciences
+RA,773,788,Public Health (RA),Health Sciences
+RA,790,790.95,Public Health (RA),Health Sciences
+RA,791,954,Public Health (RA),Health Sciences
+RA,960,1000.5,Public Health (RA),Health Sciences
+RA,1001,1171,Public Health (RA),Health Sciences
+RA,1190,1270,Public Health (RA),Health Sciences
+RB,24,33,Pathology (RB),Health Sciences
+RB,37,56.5,Pathology (RB),Health Sciences
+RB,57.001,126.999,Pathology (RB),Health Sciences
+RB,127,150,Pathology (RB),Health Sciences
+RB,151,214,Pathology (RB),Health Sciences
+RC,31,48.999,Internal Medicine (RC),Health Sciences
+RC,49,52,Internal Medicine (RC),Health Sciences
+RC,52.001,70.999,Internal Medicine (RC),Health Sciences
+RC,71,78.7,Internal Medicine (RC),Health Sciences
+RC,86,88.9,Internal Medicine (RC),Health Sciences
+RC,109,216,Internal Medicine (RC),Health Sciences
+RC,254,282,Internal Medicine (RC),Health Sciences
+RC,306,320.5,Internal Medicine (RC),Health Sciences
+RC,321,345.999,Neuroscience (RC),Health Sciences
+RC,346,429,Neuroscience (RC),Health Sciences
+RC,435,474.999,Psychiatry (RC),Health Sciences
+RC,475,489,Psychiatry (RC),Health Sciences
+RC,490,499,Psychiatry (RC),Health Sciences
+RC,500,510,Psychiatry (RC),Health Sciences
+RC,512,528,Psychiatry (RC),Health Sciences
+RC,530,552,Psychiatry (RC),Health Sciences
+RC,552.001,553.999,Psychiatry (RC),Health Sciences
+RC,554,569.5,Psychiatry (RC),Health Sciences
+RC,569.7,571,Psychiatry (RC),Health Sciences
+RC,581,607,Internal Medicine (RC),Health Sciences
+RC,620,627,Internal Medicine (RC),Health Sciences
+RC,627.5,632,Internal Medicine (RC),Health Sciences
+RC,633,647.5,Internal Medicine (RC),Health Sciences
+RC,648,665,Internal Medicine (RC),Health Sciences
+RC,666,701,Internal Medicine (RC),Health Sciences
+RC,701.001,704.999,Internal Medicine (RC),Health Sciences
+RC,705,779,Internal Medicine (RC),Health Sciences
+RC,799,869,Internal Medicine (RC),Health Sciences
+RC,870,923,Internal Medicine (RC),Health Sciences
+RC,924,924.5,Internal Medicine (RC),Health Sciences
+RC,925,935,Internal Medicine (RC),Health Sciences
+RC,935.001,951,Internal Medicine (RC),Health Sciences
+RC,952,954.6,Internal Medicine (RC),Health Sciences
+RC,955,962,Internal Medicine (RC),Health Sciences
+RC,963,969,Internal Medicine (RC),Health Sciences
+RC,970,986,Internal Medicine (RC),Health Sciences
+RC,1000,1020,Internal Medicine (RC),Health Sciences
+RC,1200,1245,Internal Medicine (RC),Health Sciences
+RD,1,31.7,Surgery & Anesthesiology (RD),Health Sciences
+RD,32,33.9,Surgery & Anesthesiology (RD),Health Sciences
+RD,33.901,48.999,Surgery & Anesthesiology (RD),Health Sciences
+RD,49,52,Surgery & Anesthesiology (RD),Health Sciences
+RD,57,57,Surgery & Anesthesiology (RD),Health Sciences
+RD,63,76,Surgery & Anesthesiology (RD),Health Sciences
+RD,78.3,87.3,Surgery & Anesthesiology (RD),Health Sciences
+RD,92,97.8,Surgery & Anesthesiology (RD),Health Sciences
+RD,98,98.4,Surgery & Anesthesiology (RD),Health Sciences
+RD,99,99.35,Surgery & Anesthesiology (RD),Health Sciences
+RD,118,120.5,Surgery & Anesthesiology (RD),Health Sciences
+RD,120.6,129.8,Surgery & Anesthesiology (RD),Health Sciences
+RD,130,130,Surgery & Anesthesiology (RD),Health Sciences
+RD,137,145,Surgery & Anesthesiology (RD),Health Sciences
+RD,151,498,Surgery & Anesthesiology (RD),Health Sciences
+RD,520,599.5,Surgery & Anesthesiology (RD),Health Sciences
+RD,599.501,650.999,Surgery & Anesthesiology (RD),Health Sciences
+RD,651,678,Surgery & Anesthesiology (RD),Health Sciences
+RD,680,688,Surgery & Anesthesiology (RD),Health Sciences
+RD,701,791.999,Surgery & Anesthesiology (RD),Health Sciences
+RD,792,811,Surgery & Anesthesiology (RD),Health Sciences
+RE,1,74.999,Ophthalmology (RE),Health Sciences
+RE,91,912,Ophthalmology (RE),Health Sciences
+RE,939.2,981,Ophthalmology (RE),Health Sciences
+RF,110,320,Otorhinolaryngology (RF),Health Sciences
+RG,1,103.999,Gynecology & Obstetrics (RG),Health Sciences
+RG,104,104.7,Gynecology & Obstetrics (RG),Health Sciences
+RG,104.701,132.999,Gynecology & Obstetrics (RG),Health Sciences
+RG,133,137.6,Gynecology & Obstetrics (RG),Health Sciences
+RG,159,208,Gynecology & Obstetrics (RG),Health Sciences
+RG,211,483,Gynecology & Obstetrics (RG),Health Sciences
+RG,484,485,Gynecology & Obstetrics (RG),Health Sciences
+RG,491,499,Gynecology & Obstetrics (RG),Health Sciences
+RG,500,550.999,Gynecology & Obstetrics (RG),Health Sciences
+RG,551,591,Gynecology & Obstetrics (RG),Health Sciences
+RG,600,647.999,Gynecology & Obstetrics (RG),Health Sciences
+RG,651,721,Gynecology & Obstetrics (RG),Health Sciences
+RG,940,991,Gynecology & Obstetrics (RG),Health Sciences
+RJ,1,47.299,Pediatrics (RJ),Health Sciences
+RJ,47.401,49.999,Pediatrics (RJ),Health Sciences
+RJ,50,51,Pediatrics (RJ),Health Sciences
+RJ,52,53,Pediatrics (RJ),Health Sciences
+RJ,101,103,Pediatrics (RJ),Health Sciences
+RJ,103.001,124.999,Pediatrics (RJ),Health Sciences
+RJ,125,145,Pediatrics (RJ),Health Sciences
+RJ,206,235,Pediatrics (RJ),Health Sciences
+RJ,242,243,Pediatrics (RJ),Health Sciences
+RJ,245,247,Pediatrics (RJ),Health Sciences
+RJ,251,325,Pediatrics (RJ),Health Sciences
+RJ,370,498.999,Pediatrics (RJ),Health Sciences
+RJ,499,507,Pediatrics (RJ),Health Sciences
+RJ,507.001,550,Pediatrics (RJ),Health Sciences
+RK,1,57.999,Dentistry (RK),Health Sciences
+RK,301,493,Dentistry (RK),Health Sciences
+RK,520,528,Dentistry (RK),Health Sciences
+RK,529,535,Dentistry (RK),Health Sciences
+RK,641,667,Dentistry (RK),Health Sciences
+RL,95,95,Dermatology (RL),Health Sciences
+RL,110,120,Dermatology (RL),Health Sciences
+RL,201,331,Dermatology (RL),Health Sciences
+RL,793.001,803,Dermatology (RL),Health Sciences
+RM,1,137.999,"Pharmacy, Therapeutics, & Pharmacology (QP, RM, RS)",Health Sciences
+RM,147,180,"Pharmacy, Therapeutics, & Pharmacology (QP, RM, RS)",Health Sciences
+RM,182,190,"Pharmacy, Therapeutics, & Pharmacology (QP, RM, RS)",Health Sciences
+RM,214,258,"Diet & Clinical Nutrition (RM, TX)",Health Sciences
+RM,260,263,"Pharmacy, Therapeutics, & Pharmacology (QP, RM, RS)",Health Sciences
+RM,265,267,"Pharmacy, Therapeutics, & Pharmacology (QP, RM, RS)",Health Sciences
+RM,270,282,"Pharmacy, Therapeutics, & Pharmacology (QP, RM, RS)",Health Sciences
+RM,300,666,"Pharmacy, Therapeutics, & Pharmacology (QP, RM, RS)",Health Sciences
+RM,695,893,Physical Therapy & Rehabilitation (RM),Health Sciences
+RM,930,931,Physical Therapy & Rehabilitation (RM),Health Sciences
+RM,950,950,Physical Therapy & Rehabilitation (RM),Health Sciences
+RS,1,124.999,"Pharmacy, Therapeutics, & Pharmacology (QP, RM, RS)",Health Sciences
+RS,160,167,"Pharmacy, Therapeutics, & Pharmacology (QP, RM, RS)",Health Sciences
+RS,167.001,188.999,"Pharmacy, Therapeutics, & Pharmacology (QP, RM, RS)",Health Sciences
+RS,189,190,"Pharmacy, Therapeutics, & Pharmacology (QP, RM, RS)",Health Sciences
+RS,199.001,199.999,"Pharmacy, Therapeutics, & Pharmacology (QP, RM, RS)",Health Sciences
+RS,200,201,"Pharmacy, Therapeutics, & Pharmacology (QP, RM, RS)",Health Sciences
+RS,356.001,399.999,"Pharmacy, Therapeutics, & Pharmacology (QP, RM, RS)",Health Sciences
+RS,400,431,"Pharmacy, Therapeutics, & Pharmacology (QP, RM, RS)",Health Sciences
+RT,1,88.999,Nursing (RT),Health Sciences
+RT,89,120,Nursing (RT),Health Sciences
+RZ,201,275,"Alternative Medicine (R, RX-RZ)",Health Sciences
+RZ,301,397.5,"Alternative Medicine (R, RX-RZ)",Health Sciences
+S,1,20.999,Agriculture--General (S),Agriculture
+S,21,400.5,Agriculture--General (S),Agriculture
+S,400.501,402.999,Agriculture--General (S),Agriculture
+S,403.001,418.999,Agriculture--General (S),Agriculture
+S,419,482,Agriculture--General (S),Agriculture
+S,482.001,529.999,Agriculture--General (S),Agriculture
+S,530,539.499,Agriculture--General (S),Agriculture
+S,539.5,542.3,Agriculture--General (S),Agriculture
+S,544,545.53,Agriculture--General (S),Agriculture
+S,560,571.5,Agriculture--General (S),Agriculture
+S,583,587.73,Agriculture--General (S),Agriculture
+S,589.7,589.7,Agriculture--General (S),Agriculture
+S,589.8,589.87,Agriculture--General (S),Agriculture
+S,590,599.9,Agriculture--General (S),Agriculture
+S,600,600.7,Agriculture--General (S),Agriculture
+S,600.701,602.499,Agriculture--General (S),Agriculture
+S,605.5,605.5,Agriculture--General (S),Agriculture
+S,606,621.5,Agriculture--General (S),Agriculture
+S,622,627,Agriculture--General (S),Agriculture
+S,631,667,Agriculture--General (S),Agriculture
+S,671,760.5,Agriculture--General (S),Agriculture
+S,900,972,Agriculture--General (S),Agriculture
+SB,1,38.999,Plant Sciences (SB),Agriculture
+SB,87.001,106.999,Plant Sciences (SB),Agriculture
+SB,107,109,Plant Sciences (SB),Agriculture
+SB,109.7,111,Plant Sciences (SB),Agriculture
+SB,113.2,118.46,Plant Sciences (SB),Agriculture
+SB,119,124,Plant Sciences (SB),Agriculture
+SB,126.5,126.57,Plant Sciences (SB),Agriculture
+SB,129,130,Plant Sciences (SB),Agriculture
+SB,183,317,Plant Sciences (SB),Agriculture
+SB,317.5,319.864,Plant Sciences (SB),Agriculture
+SB,320,353.5,Plant Sciences (SB),Agriculture
+SB,354,380.999,Plant Sciences (SB),Agriculture
+SB,387,399,Plant Sciences (SB),Agriculture
+SB,421,439.8,Plant Sciences (SB),Agriculture
+SB,450.9,467.8,Plant Sciences (SB),Agriculture
+SB,469,476.4,Landscape Architecture (SB),Arts & Architecture
+SB,599,607.999,Plant Sciences (SB),Agriculture
+SB,610,615,Plant Sciences (SB),Agriculture
+SB,621,795,Plant Sciences (SB),Agriculture
+SB,818,945,Plant Sciences (SB),Agriculture
+SB,950,950.899,Plant Sciences (SB),Agriculture
+SB,950.9,970.4,Plant Sciences (SB),Agriculture
+SB,974,978,Plant Sciences (SB),Agriculture
+SD,11,115,Forestry (SD),Agriculture
+SD,131,247.5,Forestry (SD),Agriculture
+SD,250,363.3,Forestry (SD),Agriculture
+SD,363.301,387.999,Forestry (SD),Agriculture
+SD,391,410.9,Forestry (SD),Agriculture
+SD,411,428,Forestry (SD),Agriculture
+SD,561,669.5,Forestry (SD),Agriculture
+SF,1,40.999,"Animal Sciences (SF, SH, SK)",Agriculture
+SF,41,55,"Animal Sciences (SF, SH, SK)",Agriculture
+SF,55.001,83.999,"Animal Sciences (SF, SH, SK)",Agriculture
+SF,84.82,85.6,"Animal Sciences (SF, SH, SK)",Agriculture
+SF,94.5,99,"Animal Sciences (SF, SH, SK)",Agriculture
+SF,105,109,"Animal Sciences (SF, SH, SK)",Agriculture
+SF,121.001,169.999,"Animal Sciences (SF, SH, SK)",Agriculture
+SF,191,220.999,"Animal Sciences (SF, SH, SK)",Agriculture
+SF,221,250,"Animal Sciences (SF, SH, SK)",Agriculture
+SF,250.5,275,"Animal Sciences (SF, SH, SK)",Agriculture
+SF,277,294.199,"Animal Sciences (SF, SH, SK)",Agriculture
+SF,405.5,407,"Animal Sciences (SF, SH, SK)",Agriculture
+SF,451,455,"Animal Sciences (SF, SH, SK)",Agriculture
+SF,481,507,"Animal Sciences (SF, SH, SK)",Agriculture
+SF,521,539.8,"Animal Sciences (SF, SH, SK)",Agriculture
+SF,600,756.499,Veterinary Medicine (SF),Agriculture
+SF,756.5,769.5,Veterinary Medicine (SF),Agriculture
+SF,769.501,780.199,Veterinary Medicine (SF),Agriculture
+SF,780.2,780.7,Veterinary Medicine (SF),Agriculture
+SF,781,809,Veterinary Medicine (SF),Agriculture
+SF,810,810,Veterinary Medicine (SF),Agriculture
+SF,811,909,Veterinary Medicine (SF),Agriculture
+SF,910,910,Veterinary Medicine (SF),Agriculture
+SF,911,914.299,Veterinary Medicine (SF),Agriculture
+SF,915,919.5,Veterinary Medicine (SF),Agriculture
+SF,951,997.5,Veterinary Medicine (SF),Agriculture
+SH,1,20.299,"Animal Sciences (SF, SH, SK)",Agriculture
+SH,33,134.6,"Animal Sciences (SF, SH, SK)",Agriculture
+SH,134.601,137.999,"Animal Sciences (SF, SH, SK)",Agriculture
+SH,138,138,"Animal Sciences (SF, SH, SK)",Agriculture
+SH,151,170.999,"Animal Sciences (SF, SH, SK)",Agriculture
+SH,171,179,"Animal Sciences (SF, SH, SK)",Agriculture
+SH,219,321,"Animal Sciences (SF, SH, SK)",Agriculture
+SH,328,329,"Animal Sciences (SF, SH, SK)",Agriculture
+SH,329.001,333.999,"Animal Sciences (SF, SH, SK)",Agriculture
+SH,334.9,336.5,"Animal Sciences (SF, SH, SK)",Agriculture
+SH,343.2,343.3,"Animal Sciences (SF, SH, SK)",Agriculture
+SH,346,351,"Animal Sciences (SF, SH, SK)",Agriculture
+SH,365,380.92,"Animal Sciences (SF, SH, SK)",Agriculture
+SH,388.7,391.5,"Animal Sciences (SF, SH, SK)",Agriculture
+SK,351,579,"Animal Sciences (SF, SH, SK)",Agriculture
+T,10.5,11.9,Technology--General (T),Technology
+T,12.501,54.999,Technology--General (T),Technology
+T,55,55.3,Technology--General (T),Technology
+T,55.4,57.599,"Industrial & Management Engineering (T, TS)",Engineering
+T,57.6,57.97,"Industrial & Management Engineering (T, TS)",Engineering
+T,57.971,58.399,"Industrial & Management Engineering (T, TS)",Engineering
+T,58.5,58.599,"Industrial & Management Engineering (T, TS)",Engineering
+T,58.6,58.62,"Industrial & Management Engineering (T, TS)",Engineering
+T,58.621,58.64,"Industrial & Management Engineering (T, TS)",Engineering
+T,59.5,59.5,"Industrial & Management Engineering (T, TS)",Engineering
+T,59.7,59.77,"Industrial & Management Engineering (T, TS)",Engineering
+T,61,173,Technology--General (T),Technology
+T,173.2,174.5,Technology--General (T),Technology
+T,174.501,174.999,Technology--General (T),Technology
+T,175,178,Technology--General (T),Technology
+T,201,342,Technology--General (T),Technology
+T,351,385,Technology--General (T),Technology
+T,391,995,Technology--General (T),Technology
+TA,1,163.999,"Civil Engineering (TA, TD, TH)",Engineering
+TA,164,164,"Civil Engineering (TA, TD, TH)",Engineering
+TA,165,165,"Civil Engineering (TA, TD, TH)",Engineering
+TA,166,167,"Civil Engineering (TA, TD, TH)",Engineering
+TA,168,168,"Civil Engineering (TA, TD, TH)",Engineering
+TA,168.001,169.999,"Civil Engineering (TA, TD, TH)",Engineering
+TA,170,171,"Environmental Engineering (TA, TD)",Engineering
+TA,174,174,"Civil Engineering (TA, TD, TH)",Engineering
+TA,177.4,185,"Civil Engineering (TA, TD, TH)",Engineering
+TA,190,194,"Civil Engineering (TA, TD, TH)",Engineering
+TA,215.001,328.999,"Civil Engineering (TA, TD, TH)",Engineering
+TA,329,348,"Civil Engineering (TA, TD, TH)",Engineering
+TA,349,359,"Civil Engineering (TA, TD, TH)",Engineering
+TA,365,367,"Civil Engineering (TA, TD, TH)",Engineering
+TA,367.001,400.999,"Civil Engineering (TA, TD, TH)",Engineering
+TA,401,492,"Civil Engineering (TA, TD, TH)",Engineering
+TA,501,625,"Civil Engineering (TA, TD, TH)",Engineering
+TA,630,695,"Civil Engineering (TA, TD, TH)",Engineering
+TA,703,712,"Civil Engineering (TA, TD, TH)",Engineering
+TA,712.001,714.999,"Civil Engineering (TA, TD, TH)",Engineering
+TA,800,820,"Civil Engineering (TA, TD, TH)",Engineering
+TA,1001,1280,"Civil Engineering (TA, TD, TH)",Engineering
+TA,1501,1820,"Civil Engineering (TA, TD, TH)",Engineering
+TA,2001,2040,"Civil Engineering (TA, TD, TH)",Engineering
+TC,1,159.999,Hydraulic Engineering (TC),Engineering
+TC,160,181,Hydraulic Engineering (TC),Engineering
+TC,203,380,Hydraulic Engineering (TC),Engineering
+TC,401,506,Hydraulic Engineering (TC),Engineering
+TC,530,537,Hydraulic Engineering (TC),Engineering
+TC,801,978,Hydraulic Engineering (TC),Engineering
+TC,1501,1800,Ocean Engineering (TC),Engineering
+TD,1,158.999,"Environmental Engineering (TA, TD)",Engineering
+TD,159,168,"Civil Engineering (TA, TD, TH)",Engineering
+TD,169,171.8,"Environmental Engineering (TA, TD)",Engineering
+TD,171.801,171.999,"Environmental Engineering (TA, TD)",Engineering
+TD,172,193.5,"Environmental Engineering (TA, TD)",Engineering
+TD,194,195,"Environmental Engineering (TA, TD)",Engineering
+TD,201,418.999,"Environmental Engineering (TA, TD)",Engineering
+TD,419,428,"Environmental Engineering (TA, TD)",Engineering
+TD,429.5,480.7,"Environmental Engineering (TA, TD)",Engineering
+TD,783,812.5,"Environmental Engineering (TA, TD)",Engineering
+TD,878,894,"Environmental Engineering (TA, TD)",Engineering
+TD,896,899,"Environmental Engineering (TA, TD)",Engineering
+TD,920,934,"Environmental Engineering (TA, TD)",Engineering
+TD,1020,1066,"Environmental Engineering (TA, TD)",Engineering
+TE,206,209.5,Transportation Engineering (TE-TG),Engineering
+TE,210,228.3,Transportation Engineering (TE-TG),Engineering
+TE,250,278.8,Transportation Engineering (TE-TG),Engineering
+TF,501,668,Transportation Engineering (TE-TG),Engineering
+TF,1300,1620,Transportation Engineering (TE-TG),Engineering
+TG,1,470,Transportation Engineering (TE-TG),Engineering
+TH,1,844.999,"Civil Engineering (TA, TD, TH)",Engineering
+TH,1000,1725,"Civil Engineering (TA, TD, TH)",Engineering
+TH,4021,4977,"Civil Engineering (TA, TD, TH)",Engineering
+TH,6014,6081,"Civil Engineering (TA, TD, TH)",Engineering
+TH,7005,7699,"Civil Engineering (TA, TD, TH)",Engineering
+TH,7700,7975,"Civil Engineering (TA, TD, TH)",Engineering
+TH,9025,9745,"Civil Engineering (TA, TD, TH)",Engineering
+TJ,1,163.129,Mechanical Engineering (TJ),Engineering
+TJ,163.13,163.25,Mechanical Engineering (TJ),Engineering
+TJ,163.26,163.5,Mechanical Engineering (TJ),Engineering
+TJ,163.501,169.999,Mechanical Engineering (TJ),Engineering
+TJ,210.2,211.47,Mechanical Engineering (TJ),Engineering
+TJ,211.471,211.999,Mechanical Engineering (TJ),Engineering
+TJ,212,225,Mechanical Engineering (TJ),Engineering
+TJ,255,265,Mechanical Engineering (TJ),Engineering
+TJ,266,267.5,Mechanical Engineering (TJ),Engineering
+TJ,751,805,Mechanical Engineering (TJ),Engineering
+TJ,807,830,Mechanical Engineering (TJ),Engineering
+TJ,836,927,Mechanical Engineering (TJ),Engineering
+TJ,927.001,939.999,Mechanical Engineering (TJ),Engineering
+TJ,940,940.5,Mechanical Engineering (TJ),Engineering
+TJ,1040,1119,Mechanical Engineering (TJ),Engineering
+TJ,1125,1345,Mechanical Engineering (TJ),Engineering
+TK,1,300.999,Electrical Engineering (TK),Engineering
+TK,399.001,451.999,Electrical Engineering (TK),Engineering
+TK,452,454.4,Electrical Engineering (TK),Engineering
+TK,1001,1841,Electrical Engineering (TK),Engineering
+TK,2000,2891,Electrical Engineering (TK),Engineering
+TK,2896,2985,Electrical Engineering (TK),Engineering
+TK,3001,3521,Electrical Engineering (TK),Engineering
+TK,4001,4102,Electrical Engineering (TK),Engineering
+TK,4125,4399,Electrical Engineering (TK),Engineering
+TK,5101,6720,Electrical Engineering (TK),Engineering
+TK,7800,7884.999,Electrical Engineering (TK),Engineering
+TK,7885,7895,Electrical Engineering (TK),Engineering
+TK,8300,8360,Electrical Engineering (TK),Engineering
+TK,9001,9401,Electrical Engineering (TK),Engineering
+TL,1,484,Aeronautics Engineering & Astronautics (TL),Engineering
+TL,500,777,Aeronautics Engineering & Astronautics (TL),Engineering
+TL,780,785.8,Aeronautics Engineering & Astronautics (TL),Engineering
+TL,787,4050,Aeronautics Engineering & Astronautics (TL),Engineering
+TN,1,262.999,Mining Engineering & Metallurgy (TN),Engineering
+TN,263,271,Mining Engineering & Metallurgy (TN),Engineering
+TN,275,325,Mining Engineering & Metallurgy (TN),Engineering
+TN,400,580,Mining Engineering & Metallurgy (TN),Engineering
+TN,600,799,Mining Engineering & Metallurgy (TN),Engineering
+TN,799.5,948,Mining Engineering & Metallurgy (TN),Engineering
+TP,1,154.999,Chemical Engineering (TP),Engineering
+TP,155,156,Chemical Engineering (TP),Engineering
+TP,156.001,199.999,Chemical Engineering (TP),Engineering
+TP,200,248,Chemical Engineering (TP),Engineering
+TP,248.13,248.65,Chemical Engineering (TP),Engineering
+TP,250,261,Chemical Engineering (TP),Engineering
+TP,267.5,301,Chemical Engineering (TP),Engineering
+TP,315,360,Chemical Engineering (TP),Engineering
+TP,360.001,367.999,Chemical Engineering (TP),Engineering
+TP,368,456,Chemical Engineering (TP),Engineering
+TP,480,498,Chemical Engineering (TP),Engineering
+TP,500,660,Chemical Engineering (TP),Engineering
+TP,660.001,669.999,Chemical Engineering (TP),Engineering
+TP,670,689.999,Chemical Engineering (TP),Engineering
+TP,690,692.5,Chemical Engineering (TP),Engineering
+TP,785,869,Chemical Engineering (TP),Engineering
+TP,875,888,Chemical Engineering (TP),Engineering
+TP,890,933,Chemical Engineering (TP),Engineering
+TP,934,945,Chemical Engineering (TP),Engineering
+TP,945.001,1079.999,Chemical Engineering (TP),Engineering
+TP,1080,1185,Chemical Engineering (TP),Engineering
+TR,1,249.999,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+TR,624,835,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+TR,845,899,"Visual Arts (N, NB-NK, TR)",Arts & Architecture
+TS,155,194,"Industrial & Management Engineering (T, TS)",Engineering
+TS,195,198.8,"Industrial & Management Engineering (T, TS)",Engineering
+TS,200,770,"Industrial & Management Engineering (T, TS)",Engineering
+TS,800,839.999,"Industrial & Management Engineering (T, TS)",Engineering
+TS,920,937,"Industrial & Management Engineering (T, TS)",Engineering
+TS,940,1047,"Industrial & Management Engineering (T, TS)",Engineering
+TS,1080,1268,"Industrial & Management Engineering (T, TS)",Engineering
+TS,1300,1865,"Industrial & Management Engineering (T, TS)",Engineering
+TS,1870,1935,"Industrial & Management Engineering (T, TS)",Engineering
+TS,1950,1982,"Industrial & Management Engineering (T, TS)",Engineering
+TS,2120,2159,"Industrial & Management Engineering (T, TS)",Engineering
+TT,490,695,Arts & Crafts (TT),Arts & Architecture
+TX,341,641,"Diet & Clinical Nutrition (RM, TX)",Food Science
+TX,901,946.5,"Business (HD-HG, TX)",Business & Economics
+U,21,22.3,Military & Naval Science (U-V),Military & Naval Science
+U,27,43,Military & Naval Science (U-V),Military & Naval Science
+U,161,163,Military & Naval Science (U-V),Military & Naval Science
+U,168,168,Military & Naval Science (U-V),Military & Naval Science
+U,325.001,399.999,Military & Naval Science (U-V),Military & Naval Science
+U,799,897,Military & Naval Science (U-V),Military & Naval Science
+UA,10,20.999,Military & Naval Science (U-V),Military & Naval Science
+UA,21,885,Military & Naval Science (U-V),Military & Naval Science
+UB,250,271,Military & Naval Science (U-V),Military & Naval Science
+UF,560,780,Military & Naval Science (U-V),Military & Naval Science
+UG,474.001,489.999,Military & Naval Science (U-V),Military & Naval Science
+UG,1100,1435,Military & Naval Science (U-V),Military & Naval Science
+UH,201,515,Military & Naval Science (U-V),Military & Naval Science
+V,178.001,199.999,Military & Naval Science (U-V),Military & Naval Science
+V,210,214.5,Military & Naval Science (U-V),Military & Naval Science
+VK,588,597,Military & Naval Science (U-V),Military & Naval Science
+VM,595,974.999,Military & Naval Science (U-V),Military & Naval Science
+Z,102.5,104.5,Library & Information Science (Z),Library Science
+Z,105,115.5,Library & Information Science (Z),Library Science
+Z,278,549,Library & Information Science (Z),Library Science
+Z,665,667.999,Library & Information Science (Z),Library Science
+Z,668,669.7,Library & Information Science (Z),Library Science
+Z,669.701,671.999,Library & Information Science (Z),Library Science
+Z,672,672,Library & Information Science (Z),Library Science
+Z,672.001,674.699,Library & Information Science (Z),Library Science
+Z,675,675,Library & Information Science (Z),Library Science
+Z,678,678.88,Library & Information Science (Z),Library Science
+Z,678.9,678.9,Library & Information Science (Z),Library Science
+Z,678.901,678.999,Library & Information Science (Z),Library Science
+Z,683,683.5,Library & Information Science (Z),Library Science
+Z,688,688,Library & Information Science (Z),Library Science
+Z,688.5,688.5,Library & Information Science (Z),Library Science
+Z,689,689.8,Library & Information Science (Z),Library Science
+Z,691,692,Library & Information Science (Z),Library Science
+Z,693,695.83,Library & Information Science (Z),Library Science
+Z,696,697,Library & Information Science (Z),Library Science
+Z,699,699.5,Library & Information Science (Z),Library Science
+Z,700.9,701.5,Library & Information Science (Z),Library Science
+Z,703.6,703.6,Library & Information Science (Z),Library Science
+Z,719,723,Library & Information Science (Z),Library Science
+Z,729,875,Library & Information Science (Z),Library Science
+Z,881,977,Library & Information Science (Z),Library Science
+Z,987,996.3,Library & Information Science (Z),Library Science
+Z,1003,1003.5,Library & Information Science (Z),Library Science
+Z,1003.801,1010.999,Library & Information Science (Z),Library Science
+Z,1035,1035.9,Library & Information Science (Z),Library Science
+Z,1037,1039,Library & Information Science (Z),Library Science
+Z,1215,1363,Library & Information Science (Z),Library Science
+Z,5051,7999,Library & Information Science (Z),Library Science
+ZA,3038,3149.999,Library & Information Science (Z),Library Science
+ZA,4050,4149.999,Library & Information Science (Z),Library Science

@@ -163,8 +163,8 @@ module Encomium
 
       @tables["lc_classifications"] << [
         @lc_classification_counter,
-        normalized[:normalized],
-        normalized[:lj_subject],
+        normalized.nil? ? "Unknown" : normalized[:normalized],
+        normalized.nil? ? "Unknown" : normalized[:lj_subject],
         @top_classificaitons[data["Classification Code"][0]],
         data["Classification Code"],
         data["Start Range Number"],

@@ -28,15 +28,23 @@ RSpec.describe Encomium::WOS::GrantSummary do
     end
 
     it "indexes by ISSN" do
-      expect(@issns).to eq(["0556-2813", "1089-490X"])
+      expect(@issns.uniq).to eq(["0556-2813", "1089-490X"])
     end
 
-    it "has the right number of grants" do
-      expect(@grants.size).to eq(2)
+    it "has the right number of issn grant records" do
+      expect(@grants.size).to eq(4)
     end
 
     it "parses the grant IDs" do
       expect(@grants.first["ids"]).to eq(["DE-FG02-87ER40328", "DE-FG02-03ER41259"])
+    end
+
+    it "adds a mapped agency label for grant names included in the config file" do
+      expect(@grants.last["fed_reporter_agency_name"]).to eq("Department of Health & Human Services")
+    end
+
+    it "has a null fed reporter label for grant names not included in the config file" do
+      expect(@grants.first["fed_reporter_agency_name"]).to be_nil
     end
   end
 end

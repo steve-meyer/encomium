@@ -29,6 +29,16 @@ module Encomium
 
   class << self
 
+    def root
+      File.dirname __dir__
+    end
+
+
+    def config_dir
+      File.join(root, "config")
+    end
+
+
     def valid_issn?(issn)
       issn.is_a?(String) && (issn =~ /^[0-9]{4}-[0-9]{3}[0-9xX]$/) == 0
     end

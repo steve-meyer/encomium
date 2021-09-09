@@ -52,13 +52,11 @@ module Encomium
 
 
     def load_lc_class_data
-      config_dir = File.expand_path(File.dirname(__FILE__) + "../../../config/")
-
-      top_classifications_file = config_dir + "/lc_top_classifications.yml"
+      top_classifications_file = File.join(Encomium.config_dir, "lc_top_classifications.yml")
       @top_classificaitons = YAML.load_file(top_classifications_file)
 
-      lc_classifications_file = config_dir + "/lc-classifications.csv"
-      lc_normalizations_file  = config_dir + "/lc-classifications-normalized.csv"
+      lc_classifications_file = File.join(Encomium.config_dir, "lc-classifications.csv")
+      lc_normalizations_file  = File.join(Encomium.config_dir, "lc-classifications-normalized.csv")
       @call_number_ranges     = CSV.open(lc_classifications_file, headers: true).map {|row| row.to_h}
       @normalized_subjects    = CSV.open(lc_normalizations_file, headers: true).map do |row|
         key = row["Code"] + row["Range Start"] + "::" + row["Code"] + row["Range End"]

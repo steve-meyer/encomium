@@ -14,6 +14,7 @@ module Encomium
 
 
       def run
+        load_grant_agency_data
         File.open(@output_file, "w+") do |output_file|
           @article_files.sort.each do |article_file|
             inst = File.basename( File.dirname(article_file) ).to_sym
@@ -22,6 +23,7 @@ module Encomium
               article = JSON.parse(line)
 
               grants = parse_grants(article)
+              grants = add_fed_reporter_name(grants)
               issns  = article["identifiers"].select {|id| id["type"] == "issn" || id["type"] == "eissn"}
                                              .map    {|id| id["value"]}
                                              .uniq
@@ -38,6 +40,31 @@ module Encomium
             end # File.open(article_file).each do |line|
           end # @article_files.sort.each do |article_file|
         end # File.open(@output_file, "w+") do |output_file|
+      end
+
+
+      protected
+
+
+      def add_fed_reporter_name(grants)
+        grants.each do |grant|
+          agency_names = [grant["agency"]] + grant["pref_agency_names"]
+          grant["fed_reporter_agency_name"] = agency_names.compact.map do |name|
+            @grant_agencies.map {|pattern, label| label if name =~ pattern}.compact
+          end.flatten.first
+        end
+        grants
+      end
+
+
+      def load_grant_agency_data
+        grant_agencies_file = File.join(Encomium.config_dir, "/grant_agencies.yml")
+        @grant_agencies = YAML.load_file(grant_agencies_file).reduce(Hash.new) do |agencies, agency_data|
+          agency_data.last["matches"].each do |label_match|
+            agencies[Regexp.new(label_match)] = agency_data.last["preferred_label"]
+          end
+          agencies
+        end
       end
 
 

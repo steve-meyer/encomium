@@ -1,0 +1,43 @@
+hhs:
+  preferred_label: Department of Health & Human Services
+  matches:
+    - ^Agency for Healthcare Research & Quality$
+    - ^United States Department of Health & Human Services$
+    - ^United States Health Resources & Service Administration (HRSA)$
+    - ^United States Public Health Service$
+    - ^National Institute for Occupational Safety & Health (NIOSH)$
+    - ^Centers for Disease Control
+    - ^National Institutes of Health
+    - ^NIH
+defense_dept:
+  preferred_label: Department of Defense
+  matches:
+    - ^United States Department of Defense$
+    - ^US Army Research Laboratory (ARL)$
+    - USAMRMC
+nsf:
+  preferred_label: National Science Foundation
+  matches:
+    - ^National Science Foundation (NSF)$
+    - ^NSF
+usda:
+  preferred_label: United States Department of Agriculture
+  matches:
+    - USDA
+    - ^United States Forest Service$
+epa:
+  preferred_label: United States Environmental Protection Agency
+  matches:
+    - ^United States Environmental Protection Agency$
+edu_dept:
+  preferred_label: Department of Education
+  matches:
+    - ^US Department of Education$
+nasa:
+  preferred_label: NASA
+  matches:
+    - NASA
+vet_affairs:
+  preferred_label: US Department of Veterans Affairs
+  matches:
+    - Veterans Affairs

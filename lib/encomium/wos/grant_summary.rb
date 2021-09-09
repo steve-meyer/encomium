@@ -21,7 +21,7 @@ module Encomium
               @article_count += 1
               article = JSON.parse(line)
 
-              grants = article["grants"].nil? ? [] : article["grants"].select {|grant| !grant["ids"].nil? && grant["ids"].size > 0}
+              grants = parse_grants(article)
               issns  = article["identifiers"].select {|id| id["type"] == "issn" || id["type"] == "eissn"}
                                              .map    {|id| id["value"]}
                                              .uniq
@@ -38,6 +38,46 @@ module Encomium
             end # File.open(article_file).each do |line|
           end # @article_files.sort.each do |article_file|
         end # File.open(@output_file, "w+") do |output_file|
+      end
+
+
+      # All the way upstream in the source XML (and therefore derivative JSON data) are entries like the following:
+      #
+      # <grant>
+      #   <grant_agency>NIH Roadmap for Medical Research</grant_agency>
+      #   <grant_agency pref="Y">United States Department of Health &amp; Human Services</grant_agency>
+      #   <grant_agency pref="Y">National Institutes of Health (NIH) - USA</grant_agency>
+      #   <grant_ids count="10">
+      #     <grant_id>&lt;/bold&gt;</grant_id>
+      #     <grant_id>U01 AR45580</grant_id>
+      #     <grant_id>U01 AR45614</grant_id>
+      #     <grant_id>U01 AR45632</grant_id>
+      #     <grant_id>U01 AR45647</grant_id>
+      #     <grant_id>U01 AR45654</grant_id>
+      #     <grant_id>U01 AR45583</grant_id>
+      #     <grant_id>U01 AG18197</grant_id>
+      #     <grant_id>U01-AG027810</grant_id>
+      #     <grant_id>UL1 RR024140&lt;bold&gt;</grant_id>
+      #   </grant_ids>
+      # </grant>
+      #
+      # This method will remove the junk HTML element strings <bold> and </bold> and then select
+      # only the remaining grants with non-empty string IDs.
+      def parse_grants(article)
+        if article["grants"].nil?
+          Array.new
+        else
+          # First fix the grant IDs that contain an HTML <bold> element.
+          # * Strip the strings '<bold>' and '</bold>' out of the grant IDs
+          # * Delete any grant IDs that are result in empty strings
+          grants = article["grants"].map do |grant|
+            grant["ids"] = grant["ids"].map {|id| id.gsub(/<\/{0,1}bold>/, "").strip}.delete_if {|id| id == ""} if grant["ids"]
+            grant
+          end
+
+          # Then select only the grants that still have IDs
+          grants.select {|grant| !grant["ids"].nil? && grant["ids"].size > 0}
+        end
       end
 
     end

@@ -267,8 +267,8 @@ RSpec.describe Encomium::DataSet do
     context "the grants tables" do
       before(:all) do
         @grants = table_data("grants")
-        @agencies = table_data("agencies")
-        @agency_grant_data = table_data("agencies_grants")
+        @fed_reporter_agencies = table_data("fed_reporter_agencies")
+        # @agency_grant_data = table_data("agencies_grants")
         @grant_journal_data = table_data("grants_journals")
       end
 
@@ -284,11 +284,12 @@ RSpec.describe Encomium::DataSet do
         expect(@grants.first["grant_agency_name"]).to eq("NIH BDDOC")
       end
 
-      it "has preferred agency names" do
-        expect(@agencies.first["name"]).to eq("National Institutes of Health")
-        expect(@agencies.last["name"]).to  eq("Big Dollars Doled Out Council")
-        expect(@agency_grant_data).to include({"agency_id" => "1", "grant_id" => "1"})
-        expect(@agency_grant_data).to include({"agency_id" => "2", "grant_id" => "1"})
+      it "creates entries for fed reporter agencies when the data matches" do
+        expect(@grants.first["fed_reporter_agency_id"]).to eq("1")
+      end
+
+      it "has mapped fed reporter agencies" do
+        expect(@fed_reporter_agencies.first["name"]).to eq("Department of Health & Human Services")
       end
 
       it "associates the grant with the journal" do

@@ -12,9 +12,8 @@ module Encomium
       "publication_summaries" => ["id", "journal_id", "date", "institution", "article_count", "grant_article_count"],
       "use_summaries"         => ["id", "journal_id", "date", "institution", "use_count"],
       "citation_summaries"    => ["id", "journal_id", "date", "institution", "citation_count"],
-      "grants"                => ["id", "identifiers", "institution", "grant_agency_name"],
-      "agencies"              => ["id", "name"],
-      "agencies_grants"       => ["agency_id", "grant_id"],
+      "grants"                => ["id", "identifiers", "institution", "grant_agency_name", "fed_reporter_agency_id"],
+      "fed_reporter_agencies" => ["id", "name"],
       "grants_journals"       => ["grant_id", "journal_id"],
       "lc_classifications"    => ["id", "normalized_subject", "lj_subject", "section", "code", "range_start", "range_end", "group_1", "group_2", "group_3", "group_4", "group_5"],
       "journals_lc_classifications" => ["journal_id", "lc_classification_id"]
@@ -111,7 +110,7 @@ module Encomium
     def setup_grants_tables
       @agencies = Hash.new do |hash, agency_name|
         @agency_counter += 1
-        @tables["agencies"] << [@agency_counter, agency_name]
+        @tables["fed_reporter_agencies"] << [@agency_counter, agency_name]
         hash[agency_name] = @agency_counter
       end
     end
@@ -120,8 +119,8 @@ module Encomium
     def process_grants(grants)
       grants.each do |grant|
         @grant_counter += 1
-        @tables["grants"] << [@grant_counter, grant["ids"].join("; "), grant["institution"], grant["agency"]]
-        grant["pref_agency_names"].each {|name| @tables["agencies_grants"] << [@agencies[name], @grant_counter]}
+        fed_reporter_fk = grant["fed_reporter_agency_name"].nil? ? nil : @agencies[grant["fed_reporter_agency_name"]]
+        @tables["grants"] << [@grant_counter, grant["ids"].join("; "), grant["institution"], grant["agency"], fed_reporter_fk]
         @tables["grants_journals"] << [@grant_counter, @journal_counter]
       end
     end
